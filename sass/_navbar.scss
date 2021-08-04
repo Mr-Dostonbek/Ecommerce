@@ -16,6 +16,7 @@
     &:hover{
       color: aqua;
       transition: all .4s ease-out 0s;
+      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .contact-right > a{
@@ -24,6 +25,7 @@
     &:hover{
       color: aqua;
       transition: all .4s ease-out 0s;
+      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .message span{
@@ -34,6 +36,7 @@
     &:hover{
       color: aqua;
       transition: all .4s ease-out 0s;
+      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .message > span:last-child{
@@ -54,12 +57,11 @@
   display: flex;
   max-width: 100%;
   align-items: center;
-  // justify-content: flex-end;
 }
 nav .content{
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 nav .content .links{
   display: flex;
@@ -97,6 +99,10 @@ nav .content .links{
   font-weight: 500;
   background: black;
   transition: all .4s ease-out;
+  text-shadow: 0 0 10px rgb(23, 235, 235);
+}
+.content .links > li > a:hover{
+  background: transparent;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
@@ -174,11 +180,11 @@ nav .content .links{
     padding: 3px 7px;
     display: inline-block;
     border-radius: 100px;
-    background-color: orange;
+    background-color: aqua;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
-    color: greenyellow;
+    color: black;
     margin: 0;
 }
 
@@ -193,7 +199,7 @@ nav .content .links{
   transition: all .4s ease-out 0s;
 }
 .nav-contact label:hover {
-  color: greenyellow;
+  color: aqua;
   transition: all .4s ease-out 0s;
 }
 
@@ -240,7 +246,7 @@ nav .content .links{
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-      color: greenyellow;
+      color: aqua;
       text-decoration: none;
     }
   }
