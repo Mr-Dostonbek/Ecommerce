@@ -1,0 +1,22 @@
+.btn{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  background: #058283;
+  border-color: teal;
+  padding: 9px 25px;
+  white-space: nowrap;
+  transition: all .4s ease-out 0s;
+  &:hover{
+    background: black;
+    border-color: brown;
+    transition: all .4s ease-out 0s;
+    color: white;
+  }
+}
+.btn-outline{
+  background: transparent;
+  margin-left: 24px;
+}
+
