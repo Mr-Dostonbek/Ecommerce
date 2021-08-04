@@ -162,7 +162,7 @@ nav .content .links {
 .content .links li label:hover {
   color: aqua;
   font-weight: 500;
-  background: orange;
+  background: black;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
 }
