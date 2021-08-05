@@ -392,7 +392,7 @@ nav.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: burlywood;
+  background-color: black;
   padding: 10px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -532,7 +532,7 @@ nav.sticky {
 .btn-outline {
   background: transparent;
   margin-left: 24px;
-  color: white;
+  color: black;
 }
 
 .splide {
@@ -596,7 +596,7 @@ nav.sticky {
   font-weight: 500;
   padding: 0;
   margin: 24px 0;
-  color: black;
+  color: whitesmoke;
 }
 
 .splide__pagination {
