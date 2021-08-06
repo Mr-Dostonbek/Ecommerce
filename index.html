@@ -68,9 +68,11 @@
               </label>
               <li>
                 <a href="#" class="desktop-link">HOME</a>
+                <label class="mobile__chevron">HOME</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">SHOP</a>
+                <label class="mobile__chevron">SHOP</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">
@@ -138,42 +140,17 @@
                   <li><a href="#">Pricing Table</a></li>
                   <li><a href="#">Our People</a></li>
                   <li><a href="#">Partners</a></li>
-                  <li>
-                    <a href="#" class="desktop-link">
-                      Contact
-                      <span class="fa fa-chevron-right"></span>
-                    </a>
-                    <input type="checkbox" id="show-contact-items" />
-                    <label class="mobile__chevron" for="show-contact-items">
-                      Contact
-                      <span class="fa fa-chevron-down"></span>
-                    </label>
-                    <ul>
-                      <li>
-                        <a href="#">
-                          Contact
-                          <span class="badge">1</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Contact
-                          <span class="badge">2</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
                   <li><a href="#">Search Results</a></li>
                   <li><a href="#">Check out</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="desktop-link">BLOG
-                </a>
-                <input type="checkbox" id="show-blog" />
+                <a href="#" class="desktop-link">BLOG</a>
+                <label class="mobile__chevron">BLOG</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">CONTACT</a>
+                <label class="mobile__chevron">CONTACT</label>
               </li>
             </ul>
           </div>
@@ -252,7 +229,7 @@
   </div>
 
   <!-- Carousel start -->
-  
+
   <div id="card-slider" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
@@ -327,7 +304,7 @@
             <div class="collection__item__content">
               <h4>WOMEN'S SECTION</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <a href="#">SHOP NOW</a>
+              <a class="btn" href="#">SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -336,9 +313,9 @@
           <div class="collection__item">
             <img src="images/collection.jpg" alt="">
             <div class="collection__item__content">
-              <h4>WOMEN'S SECTION</h4>
+              <h4>MEN'S SECTION</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <a href="#">SHOP NOW</a>
+              <a class="btn" href="#">SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -349,7 +326,7 @@
             <div class="collection__item__content">
               <h4>WOMEN'S PRODUCT</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-              <a href="#">SHOP NOW</a>
+              <a class="btn" href="#">SHOP NOW</a>
             </div>
           </div>
         </div>
@@ -359,6 +336,55 @@
   </section>
 
   <!-- Clothing collection section end -->
+
+  <!-- Women's section start -->
+
+  <section class="womans-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <h1>#forWoman</h1>
+          <img src="images/women-large.jpg" alt="">
+        </div>
+
+        <div class="col-md-9">
+
+          <div class="row">
+            <div class="col">
+              <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 filterDiv cars">
+              <img src="images/insta-6.jpg" alt="">
+            </div>
+            <div class="col-md-4 filterDiv colors fruits">Orange</div>
+            <div class="col-md-4 filterDiv cars">Volvo</div>
+            <div class="col-md-4 filterDiv colors">Red</div>
+            <div class="col-md-4 filterDiv cars animals">Mustang</div>
+            <div class="col-md-4 filterDiv colors">Blue</div>
+            <div class="col-md-4 filterDiv animals">Cat</div>
+            <div class="col-md-4 filterDiv animals">Dog</div>
+            <div class="col-md-4 filterDiv fruits">Melon</div>
+            <div class="col-md-4 filterDiv fruits animals">Kiwi</div>
+            <div class="col-md-4 filterDiv fruits">Banana</div>
+            <div class="col-md-4 filterDiv fruits">Lemon</div>
+            <div class="col-md-4 filterDiv animals">Cow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Women's section end -->
 
 
   <script src="js/aos.js"></script>
