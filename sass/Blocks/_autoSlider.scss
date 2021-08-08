@@ -1,0 +1,60 @@
+.autoSlider-section {
+  @include section-padding;
+  position: relative;
+  background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
+  overflow: hidden;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), aqua);
+    width: 15%;
+    height: 100%;
+    z-index: 2;
+  }
+  &::before {
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  &::after {
+    right: 0;
+    top: 0;
+  }
+  .auto-slide {
+    position: relative;
+    height: 100%;
+    animation: scroll 35s linear infinite;
+    animation-direction: alternate;
+    &:hover {
+      animation-play-state: paused;
+    }
+    .slider {
+      position: relative;
+      transition: transform 1s;
+        &:hover img{
+          transform: scale(1.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      img {
+        // width: 100%;
+        cursor: pointer;
+        transition: transform 1s;
+      }
+      &:hover .sale, &:hover .new {
+        top: -20px;
+        left: -30px;
+        transition: all 1s;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}

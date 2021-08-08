@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="container-fluid navbar-fluid">
     <div class="
           navbar-info
@@ -340,51 +341,449 @@
   <!-- Women's section start -->
 
   <section class="womans-section">
-    <div class="container">
+    <img class="position-absolute top-0 left-0" src="images/banner_overlay_1.png" alt="">
+    <img class="position-absolute top-0 right-0" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <div class="container-xl">
       <div class="row">
 
-        <div class="col-md-3">
-          <h1>#forWoman</h1>
-          <img src="images/women-large.jpg" alt="">
+        <div class="col-md-4 woman-large">
+          <h1>
+            <a href="#">#forWoman</a>
+          </h1>
+          <div class="woman__large__img">
+            <img src="images/women-large.jpg" alt="">
+          </div>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-8 woman-filter">
 
           <div class="row">
             <div class="col">
               <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+                <a class="filterBtn active" onclick="filterSelection('all')"> ALL</a>
+                <a class="filterBtn" onclick="filterSelection('woman')"> WOMAN</a>
+                <a class="filterBtn" onclick="filterSelection('shirt')"> SHIRT</a>
+                <a class="filterBtn" onclick="filterSelection('swetashirt')"> SWEATSHIRT</a>
+                <a class="filterBtn" onclick="filterSelection('jeans')"> JEANS</a>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-4 filterDiv cars">
-              <img src="images/insta-6.jpg" alt="">
+          <div class="row"> 
+            
+            <div class="col-sm-6 col-md-4 filterDiv shirt jeans pb-4">
+
+              <div class="woman-card">
+                <div class="sale">
+                  SALE
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/women-3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
             </div>
-            <div class="col-md-4 filterDiv colors fruits">Orange</div>
-            <div class="col-md-4 filterDiv cars">Volvo</div>
-            <div class="col-md-4 filterDiv colors">Red</div>
-            <div class="col-md-4 filterDiv cars animals">Mustang</div>
-            <div class="col-md-4 filterDiv colors">Blue</div>
-            <div class="col-md-4 filterDiv animals">Cat</div>
-            <div class="col-md-4 filterDiv animals">Dog</div>
-            <div class="col-md-4 filterDiv fruits">Melon</div>
-            <div class="col-md-4 filterDiv fruits animals">Kiwi</div>
-            <div class="col-md-4 filterDiv fruits">Banana</div>
-            <div class="col-md-4 filterDiv fruits">Lemon</div>
-            <div class="col-md-4 filterDiv animals">Cow</div>
-          </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv jeans pb-4">
+
+              <div class="woman-card">
+                
+                <div class="woman__card__img">
+                  <img src="images/women-1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv swetashirt pb-4">
+
+              <div class="woman-card">
+                <div class="new">
+                  NEW
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/women-2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv shirt pb-4">
+
+              <div class="woman-card">
+                <div class="new">
+                  NEW
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/women-1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv woman pb-4">
+
+              <div class="woman-card">
+                <div class="sale">
+                  SALE
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/women-4.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv woman swetashirt pb-4">
+
+              <div class="woman-card">
+                
+                <div class="woman__card__img">
+                  <img src="images/women-3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
         </div>
       </div>
     </div>
   </section>
 
   <!-- Women's section end -->
+
+  <!-- Auto-slider section start -->
+
+  <section class="autoSlider-section">
+    <div class="container-fluid">
+      <div class="row auto-slide flex-nowrap">
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img src="images/man-1.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img src="images/man-2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="sale">SALE</div>
+          <img src="images/man-3.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img src="images/man-4.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="sale">SALE</div>
+          <img src="images/man-1.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img src="images/man-2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img src="images/man-3.jpg" alt="">
+        </div>
+
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img src="images/man-1.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="sale">SALE</div>
+          <img src="images/man-2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img src="images/man-3.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img src="images/man-4.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img src="images/man-1.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="sale">SALE</div>
+          <img src="images/man-2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img src="images/man-3.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Auto-slider section end -->
+
+  <!-- Man's section start -->
+
+  <section class="womans-section">
+    <img class="position-absolute top-0 left-0" style="z-index: 1;" src="images/banner_overlay_1.png" alt="">
+    <img class="position-absolute top-0 right-0" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <div class="container-xl">
+      <div class="row">
+
+        <div class="col-md-4 order-3 woman-large" style="padding-left: 48px; padding-right: 0;">
+          <h1>
+            <a href="#">#forMan</a>
+          </h1>
+          <div class="woman__large__img">
+            <img src="images/man-large.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-8 woman-filter">
+
+          <div class="row">
+            <div class="col">
+              <div id="myBtnContainer">
+                <a class="filterBtn active" onclick="filterSelection('all')"> ALL</a>
+                <a class="filterBtn" onclick="filterSelection('woman')"> WOMAN</a>
+                <a class="filterBtn" onclick="filterSelection('shirt')"> SHIRT</a>
+                <a class="filterBtn" onclick="filterSelection('swetashirt')"> SWEATSHIRT</a>
+                <a class="filterBtn" onclick="filterSelection('jeans')"> JEANS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row"> 
+            
+            <div class="col-sm-6 col-md-4 filterDiv shirt jeans pb-4">
+
+              <div class="woman-card">
+                <div class="new">NEW</div>
+                <div class="woman__card__img">
+                  <img src="images/man-1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv jeans pb-4">
+
+              <div class="woman-card">
+                <div class="sale">
+                  SALE
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/man-2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv swetashirt pb-4">
+
+              <div class="woman-card">
+                
+                <div class="woman__card__img">
+                  <img src="images/man-3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv shirt pb-4">
+
+              <div class="woman-card">
+                <div class="new">NEW</div>
+                <div class="woman__card__img">
+                  <img src="images/man-4.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv woman pb-4">
+
+              <div class="woman-card">
+                
+                <div class="woman__card__img">
+                  <img src="images/man-3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 filterDiv woman swetashirt pb-4">
+
+              <div class="woman-card">
+                <div class="sale">
+                  SALE
+                </div>
+                <div class="woman__card__img">
+                  <img src="images/man-2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="woman__card__socials">
+                  <span class="fa fa-heart"></span>
+                  <span class="fa fa-exchange-alt"></span>
+                  <span class="fa fa-search"></span>
+                </div>
+
+                <div class="woman__card__info">
+                  <h4>Switer</h4>
+                  <p class="price">$88.00 - $98.00</p>
+                </div>
+
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Man's section end -->
+
+  <!-- Trends section start -->
+
+  <section class="trends-section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <h4>LATEST NEWS</h4>
+          <h1>#FashionNewTrends</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="trend__card">
+            <div class="trend__card__img">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trends section end -->
 
 
   <script src="js/aos.js"></script>

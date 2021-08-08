@@ -3,17 +3,17 @@
 .collection-section{
   .collection__item{
     position: relative;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
     overflow: hidden;
     &:hover img{
       filter: blur(2px);
       transform: scale(1.4);
-      transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease;
     }
     &:hover .collection__item__content{
       transform: translate(0, 0);
       border-radius: 0;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease;
     }
     .collection__item__content{
       transform: translate(100%, 100%);
@@ -29,7 +29,7 @@
       align-items: center;
       flex-direction: column;
       border-radius: 70%;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease;
       h4{
         font-size: 24px;
         font-weight: 600;
@@ -48,43 +48,3 @@
 
 // Collection section end
 
-// Woman's Section
-
-.womans-section{
-  .filterDiv {
-    background-color: #2196F3;
-    color: #ffffff;
-    max-width: 100%;
-    // line-height: 100px;
-    text-align: center;
-    margin: 2px;
-    display: none;
-  }
-    .show {
-      display: block;
-    }
-    .container {
-      margin-top: 20px;
-      overflow: hidden;
-      
-    }
-    .btn {
-      border: none;
-      outline: none;
-      padding: 12px 16px;
-      background-color: #f1f1f1;
-      cursor: pointer;
-    }
-    
-    .btn:hover {
-      background-color: #ddd;
-    }
-    
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-    
-    
-  
-}

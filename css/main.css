@@ -785,8 +785,8 @@ nav.sticky {
 
 .collection-section .collection__item {
   position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
 }
 
@@ -795,16 +795,16 @@ nav.sticky {
           filter: blur(2px);
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .collection-section .collection__item:hover .collection__item__content {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   border-radius: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .collection-section .collection__item .collection__item__content {
@@ -830,8 +830,8 @@ nav.sticky {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 70%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .collection-section .collection__item .collection__item__content h4 {
@@ -849,38 +849,343 @@ nav.sticky {
   display: block;
 }
 
+.womans-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #111117;
+  position: relative;
+  overflow: hidden;
+}
+
+.womans-section .woman-large {
+  padding-right: 48px;
+  z-index: 32;
+}
+
+.womans-section .woman-large .woman__large__img {
+  overflow: hidden;
+}
+
+.womans-section .woman-large .woman__large__img img {
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 65;
+}
+
+.womans-section .woman-large .woman__large__img img:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.womans-section .woman-large h1 {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  -webkit-text-decoration: 5px solid white;
+          text-decoration: 5px solid white;
+  margin: 48px 0;
+  z-index: 65;
+}
+
+.womans-section .woman-large h1 a {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: white;
+}
+
+.womans-section #myBtnContainer {
+  margin-bottom: 48px;
+  background: transparent;
+}
+
 .womans-section .filterDiv {
-  background-color: #2196F3;
   color: #ffffff;
+  background: transparent;
   max-width: 100%;
   text-align: center;
-  margin: 2px;
   display: none;
+  z-index: 999;
+}
+
+.womans-section .filterDiv .woman-card {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__img img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card:hover {
+  -webkit-box-shadow: 0 0 15px aqua;
+          box-shadow: 0 0 15px aqua;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(-12.5px);
+          transform: translateY(-12.5px);
+}
+
+.womans-section .filterDiv .woman-card:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card:hover .woman__card__socials {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card:hover .woman__card__info {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__socials {
+  width: 35%;
+  height: 90%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(aqua));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), aqua);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__socials span {
+  font-size: 16px;
+  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__socials span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(aqua));
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), aqua);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__info h4 {
+  color: black;
+  font-weight: 600;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__info p {
+  color: black;
+  font-weight: 500;
 }
 
 .womans-section .show {
   display: block;
+  z-index: 999;
 }
 
-.womans-section .container {
-  margin-top: 20px;
+.womans-section .filterBtn {
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.womans-section .filterBtn:hover {
+  border-bottom: 2px solid aqua;
+  color: aqua;
+  text-shadow: 0 0 10px #17ebeb;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.womans-section .filterBtn.active {
+  border-bottom: 2px solid aqua;
+  color: aqua;
+  text-shadow: 0 0 10px #17ebeb;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.sale {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 3px 8px;
+  background: #f30000;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 23;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.new {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  padding: 3px 8px;
+  background: #1D5AD0;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  z-index: 23;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.autoSlider-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0099ff), to(aqua));
+  background: linear-gradient(to bottom right, #0099ff, aqua);
   overflow: hidden;
 }
 
-.womans-section .btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
+.autoSlider-section::after, .autoSlider-section::before {
+  content: "";
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(aqua));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), aqua);
+  width: 15%;
+  height: 100%;
+  z-index: 2;
+}
+
+.autoSlider-section::before {
+  left: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.autoSlider-section::after {
+  right: 0;
+  top: 0;
+}
+
+.autoSlider-section .auto-slide {
+  position: relative;
+  height: 100%;
+  -webkit-animation: scroll 35s linear infinite;
+          animation: scroll 35s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.autoSlider-section .auto-slide:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.autoSlider-section .auto-slide .slider {
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.autoSlider-section .auto-slide .slider:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.autoSlider-section .auto-slide .slider img {
   cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-.womans-section .btn:hover {
-  background-color: #ddd;
+.autoSlider-section .auto-slide .slider:hover .sale, .autoSlider-section .auto-slide .slider:hover .new {
+  top: -20px;
+  left: -30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.womans-section .btn.active {
-  background-color: #666;
-  color: white;
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 9));
+            transform: translateX(calc(-250px * 9));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 9));
+            transform: translateX(calc(-250px * 9));
+  }
 }
 /*# sourceMappingURL=main.css.map */
