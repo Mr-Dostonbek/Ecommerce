@@ -1,26 +1,23 @@
 // Woman's Section
 
-.womans-section{
+.womans-section {
   @include section-padding;
   background-color: #111117;
   position: relative;
   overflow: hidden;
-  .woman-large{
+  .woman-large {
     padding-right: 48px;
     z-index: 32;
-    .woman__large__img{
+    .woman__large__img {
       overflow: hidden;
-      img{
+      img {
+        max-width: 100%;
         position: relative;
-          transition: all 1s ease;
-          z-index: 65;
-        &:hover{
-          transition: all 1s ease;
-          transform: scale(1.2);
-        }
+        transition: all 1s ease;
+        z-index: 65;
       }
     }
-    h1{
+    h1 {
       position: relative;
       font-size: 48px;
       font-weight: 700;
@@ -29,17 +26,19 @@
       text-decoration: 5px solid white;
       margin: 48px 0;
       z-index: 65;
-      a{
+      a {
         text-decoration: solid;
         color: white;
       }
     }
   }
-  #myBtnContainer{
+  #myBtnContainer,
+  #myBtnContainerMan {
     margin-bottom: 48px;
     background: transparent;
   }
-  .filterDiv {
+  .filterDiv,
+  .filterDivMan {
     color: #ffffff;
     background: transparent;
     max-width: 100%;
@@ -47,40 +46,42 @@
     display: none;
     z-index: 999;
 
-    .woman-card{
+    .woman-card {
       position: relative;
       overflow: hidden;
       transition: all 0.5s ease;
-      
-      .woman__card__img{
-        
-        img{
+
+      .woman__card__img {
+        background-color: #efefef;
+
+        img {
           width: 100%;
           cursor: pointer;
           transition: all 0.5s ease;
         }
       }
-      &:hover{
+      &:hover {
         box-shadow: 0 0 15px aqua;
         transition: all 0.5s ease;
         transform: translateY(-12.5px);
       }
-      &:hover img{
-        transform: scale(1.3);
+      &:hover img {
+        // transform: scale(1.3);
+        transform: translate(-10%, -10%);
         transition: all 0.5s ease;
       }
-      &:hover .woman__card__socials{
+      &:hover .woman__card__socials {
         transform: translateY(0);
         transition: all 0.5s ease;
       }
-      &:hover .woman__card__info{
+      &:hover .woman__card__info {
         transform: translateX(0);
         transition: all 0.5s ease;
       }
-      .woman__card__socials{
+      .woman__card__socials {
         width: 35%;
         height: 90%;
-        background-image: linear-gradient(to right, rgba(255,0,0,0), aqua);
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), aqua);
         position: absolute;
         top: 0;
         right: 0;
@@ -88,79 +89,89 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
         transform: translateX(100%);
         transition: all 0.5s ease;
         // justify-content: center;
-        span{
+        span {
           font-size: 16px;
           color: black;
           transition: all 0.2s ease;
           padding: 7px;
           cursor: pointer;
-          &:hover{
+          &:hover {
             transform: scale(1.1);
             transition: all 0.2s ease;
           }
         }
       }
-      .woman__card__info{
+      .woman__card__info {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 45%;
-        background-image: linear-gradient(to bottom, rgba(255,0,0,0), aqua);
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), aqua);
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         transform: translateY(100%);
         transition: all 0.5s ease;
-        h4{
+        h4 {
           color: black;
           font-weight: 600;
-
-        } 
-        p{
+        }
+        p {
           color: black;
           font-weight: 500;
-        }  
+        }
       }
     }
-
   }
-    .show {
-      display: block;
-      z-index: 999;
+  .woman-filter {
+    z-index: 6565;
+  }
+  .show,
+  .showMan {
+    display: block;
+  }
 
-    }
-    .filterBtn {
-      display: inline-block;
-      padding: 8px 16px;
-      color: white;
-      font-weight: 600;
-      border-bottom: 2px solid transparent;
-      cursor: pointer;
-      z-index: 999;
-      transition: all 1s ease;
-    }
-    
-    .filterBtn:hover {
-      border-bottom: 2px solid aqua;
-      color: aqua;
-      text-shadow: 0 0 10px rgb(23, 235, 235);
-      transition: all 1s ease;
-    }
-    
-    .filterBtn.active {
-      border-bottom: 2px solid aqua;
-      color: aqua;
-      text-shadow: 0 0 10px rgb(23, 235, 235);
-      transition: all 1s ease;
-    }
+  .filterBtn,
+  .filterBtnMan {
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 1s ease;
+  }
 
+  #myBtnContainer,
+  #myBtnContainerMan {
+    z-index: 98989;
+  }
+
+  .filterBtn:hover,
+  .filterBtnMan:hover {
+    border-bottom: 2px solid aqua;
+    color: aqua;
+    text-shadow: 0 0 10px rgb(23, 235, 235);
+    transition: all 1s ease;
+  }
+
+  .filterBtn.active,
+  .filterBtnMan.activeMan {
+    border-bottom: 2px solid aqua;
+    color: aqua;
+    text-shadow: 0 0 10px rgb(23, 235, 235);
+    transition: all 1s ease;
+  }
 }
 
-.sale{
+.sale {
   position: absolute;
   top: 30px;
   left: 0;
@@ -172,12 +183,12 @@
   z-index: 23;
   transition: all 1s;
 }
-.new{
+.new {
   position: absolute;
   top: 30px;
   left: 0;
   padding: 3px 8px;
-  background: #1D5AD0;
+  background: #1d5ad0;
   color: white;
   font-size: 13px;
   letter-spacing: 1px;

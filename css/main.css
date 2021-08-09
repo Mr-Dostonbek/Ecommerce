@@ -867,17 +867,11 @@ nav.sticky {
 }
 
 .womans-section .woman-large .woman__large__img img {
+  max-width: 100%;
   position: relative;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   z-index: 65;
-}
-
-.womans-section .woman-large .woman__large__img img:hover {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .womans-section .woman-large h1 {
@@ -898,12 +892,14 @@ nav.sticky {
   color: white;
 }
 
-.womans-section #myBtnContainer {
+.womans-section #myBtnContainer,
+.womans-section #myBtnContainerMan {
   margin-bottom: 48px;
   background: transparent;
 }
 
-.womans-section .filterDiv {
+.womans-section .filterDiv,
+.womans-section .filterDivMan {
   color: #ffffff;
   background: transparent;
   max-width: 100%;
@@ -912,21 +908,29 @@ nav.sticky {
   z-index: 999;
 }
 
-.womans-section .filterDiv .woman-card {
+.womans-section .filterDiv .woman-card,
+.womans-section .filterDivMan .woman-card {
   position: relative;
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__img img {
+.womans-section .filterDiv .woman-card .woman__card__img,
+.womans-section .filterDivMan .woman-card .woman__card__img {
+  background-color: #efefef;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__img img,
+.womans-section .filterDivMan .woman-card .woman__card__img img {
   width: 100%;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card:hover {
+.womans-section .filterDiv .woman-card:hover,
+.womans-section .filterDivMan .woman-card:hover {
   -webkit-box-shadow: 0 0 15px aqua;
           box-shadow: 0 0 15px aqua;
   -webkit-transition: all 0.5s ease;
@@ -935,28 +939,32 @@ nav.sticky {
           transform: translateY(-12.5px);
 }
 
-.womans-section .filterDiv .woman-card:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.womans-section .filterDiv .woman-card:hover img,
+.womans-section .filterDivMan .woman-card:hover img {
+  -webkit-transform: translate(-10%, -10%);
+          transform: translate(-10%, -10%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card:hover .woman__card__socials {
+.womans-section .filterDiv .woman-card:hover .woman__card__socials,
+.womans-section .filterDivMan .woman-card:hover .woman__card__socials {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card:hover .woman__card__info {
+.womans-section .filterDiv .woman-card:hover .woman__card__info,
+.womans-section .filterDivMan .woman-card:hover .woman__card__info {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__socials {
+.womans-section .filterDiv .woman-card .woman__card__socials,
+.womans-section .filterDivMan .woman-card .woman__card__socials {
   width: 35%;
   height: 90%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(aqua));
@@ -975,13 +983,15 @@ nav.sticky {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__socials span {
+.womans-section .filterDiv .woman-card .woman__card__socials span,
+.womans-section .filterDivMan .woman-card .woman__card__socials span {
   font-size: 16px;
   color: black;
   -webkit-transition: all 0.2s ease;
@@ -990,14 +1000,16 @@ nav.sticky {
   cursor: pointer;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__socials span:hover {
+.womans-section .filterDiv .woman-card .woman__card__socials span:hover,
+.womans-section .filterDivMan .woman-card .woman__card__socials span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__info {
+.womans-section .filterDiv .woman-card .woman__card__info,
+.womans-section .filterDivMan .woman-card .woman__card__info {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1005,6 +1017,7 @@ nav.sticky {
   height: 45%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(aqua));
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), aqua);
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,22 +1034,29 @@ nav.sticky {
   transition: all 0.5s ease;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__info h4 {
+.womans-section .filterDiv .woman-card .woman__card__info h4,
+.womans-section .filterDivMan .woman-card .woman__card__info h4 {
   color: black;
   font-weight: 600;
 }
 
-.womans-section .filterDiv .woman-card .woman__card__info p {
+.womans-section .filterDiv .woman-card .woman__card__info p,
+.womans-section .filterDivMan .woman-card .woman__card__info p {
   color: black;
   font-weight: 500;
 }
 
-.womans-section .show {
-  display: block;
-  z-index: 999;
+.womans-section .woman-filter {
+  z-index: 6565;
 }
 
-.womans-section .filterBtn {
+.womans-section .show,
+.womans-section .showMan {
+  display: block;
+}
+
+.womans-section .filterBtn,
+.womans-section .filterBtnMan {
   display: inline-block;
   padding: 8px 16px;
   color: white;
@@ -1048,7 +1068,13 @@ nav.sticky {
   transition: all 1s ease;
 }
 
-.womans-section .filterBtn:hover {
+.womans-section #myBtnContainer,
+.womans-section #myBtnContainerMan {
+  z-index: 98989;
+}
+
+.womans-section .filterBtn:hover,
+.womans-section .filterBtnMan:hover {
   border-bottom: 2px solid aqua;
   color: aqua;
   text-shadow: 0 0 10px #17ebeb;
@@ -1056,7 +1082,8 @@ nav.sticky {
   transition: all 1s ease;
 }
 
-.womans-section .filterBtn.active {
+.womans-section .filterBtn.active,
+.womans-section .filterBtnMan.activeMan {
   border-bottom: 2px solid aqua;
   color: aqua;
   text-shadow: 0 0 10px #17ebeb;
@@ -1083,7 +1110,7 @@ nav.sticky {
   top: 30px;
   left: 0;
   padding: 3px 8px;
-  background: #1D5AD0;
+  background: #1d5ad0;
   color: white;
   font-size: 13px;
   letter-spacing: 1px;

@@ -312,7 +312,7 @@
 
         <div class="col-md-4 m-0 p-0">
           <div class="collection__item">
-            <img src="images/collection.jpg" alt="">
+            <img src="images/collection.png" alt="">
             <div class="collection__item__content">
               <h4>MEN'S SECTION</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -323,7 +323,7 @@
 
         <div class="col-md-4 m-0 p-0">
           <div class="collection__item">
-            <img src="images/slide-5.jpg" alt="">
+            <img src="images/slide-1.png" alt="">
             <div class="collection__item__content">
               <h4>WOMEN'S PRODUCT</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -341,8 +341,8 @@
   <!-- Women's section start -->
 
   <section class="womans-section">
-    <img class="position-absolute top-0 left-0" src="images/banner_overlay_1.png" alt="">
-    <img class="position-absolute top-0 right-0" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <img class="position-absolute top-0 left-0 d-none d-sm-block" src="images/banner_overlay_1.png" alt="">
+    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt="">
     <div class="container-xl">
       <div class="row">
 
@@ -360,11 +360,11 @@
           <div class="row">
             <div class="col">
               <div id="myBtnContainer">
-                <a class="filterBtn active" onclick="filterSelection('all')"> ALL</a>
-                <a class="filterBtn" onclick="filterSelection('woman')"> WOMAN</a>
-                <a class="filterBtn" onclick="filterSelection('shirt')"> SHIRT</a>
-                <a class="filterBtn" onclick="filterSelection('swetashirt')"> SWEATSHIRT</a>
-                <a class="filterBtn" onclick="filterSelection('jeans')"> JEANS</a>
+                <a id="btn" class="filterBtn active" onclick="filterSelection('all')"> ALL</a>
+                <a id="btn" class="filterBtn" onclick="filterSelection('woman')"> WOMAN</a>
+                <a id="btn" class="filterBtn" onclick="filterSelection('shirt')"> SHIRT</a>
+                <a id="btn" class="filterBtn" onclick="filterSelection('swetashirt')"> SWEATSHIRT</a>
+                <a id="btn" class="filterBtn" onclick="filterSelection('jeans')"> JEANS</a>
               </div>
             </div>
           </div>
@@ -585,16 +585,16 @@
   <!-- Man's section start -->
 
   <section class="womans-section">
-    <img class="position-absolute top-0 left-0" style="z-index: 1;" src="images/banner_overlay_1.png" alt="">
-    <img class="position-absolute top-0 right-0" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <img class="position-absolute top-0 left-0 d-none d-sm-block" style="z-index: 1;" src="images/banner_overlay_1.png" alt="">
+    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt="">
     <div class="container-xl">
       <div class="row">
 
-        <div class="col-md-4 order-3 woman-large" style="padding-left: 48px; padding-right: 0;">
+        <div class="col-md-4 order-md-3 woman-large" style="padding-left: 48px; padding-right: 0;">
           <h1>
             <a href="#">#forMan</a>
           </h1>
-          <div class="woman__large__img">
+          <div class="woman__large__img overflow-hidden">
             <img src="images/man-large.jpg" alt="">
           </div>
         </div>
@@ -603,19 +603,19 @@
 
           <div class="row">
             <div class="col">
-              <div id="myBtnContainer">
-                <a class="filterBtn active" onclick="filterSelection('all')"> ALL</a>
-                <a class="filterBtn" onclick="filterSelection('woman')"> WOMAN</a>
-                <a class="filterBtn" onclick="filterSelection('shirt')"> SHIRT</a>
-                <a class="filterBtn" onclick="filterSelection('swetashirt')"> SWEATSHIRT</a>
-                <a class="filterBtn" onclick="filterSelection('jeans')"> JEANS</a>
+              <div id="myBtnContainerMan">
+                <a class="filterBtnMan activeMan" onclick="filterSelectionMan('allMan')"> ALL</a>
+                <a class="filterBtnMan" onclick="filterSelectionMan('man')"> MAN</a>
+                <a class="filterBtnMan" onclick="filterSelectionMan('shirtMan')"> SHIRT</a>
+                <a class="filterBtnMan" onclick="filterSelectionMan('swetashirtMan')"> SWEATSHIRT</a>
+                <a class="filterBtnMan" onclick="filterSelectionMan('jeansMan')"> JEANS</a>
               </div>
             </div>
           </div>
 
           <div class="row"> 
             
-            <div class="col-sm-6 col-md-4 filterDiv shirt jeans pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan shirtMan jeansMan pb-4">
 
               <div class="woman-card">
                 <div class="new">NEW</div>
@@ -637,7 +637,7 @@
               </div>
             </div>
             
-            <div class="col-sm-6 col-md-4 filterDiv jeans pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan jeansMan pb-4">
 
               <div class="woman-card">
                 <div class="sale">
@@ -661,7 +661,7 @@
               </div>
             </div>
             
-            <div class="col-sm-6 col-md-4 filterDiv swetashirt pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan swetashirtMan pb-4">
 
               <div class="woman-card">
                 
@@ -683,7 +683,7 @@
               </div>
             </div>
             
-            <div class="col-sm-6 col-md-4 filterDiv shirt pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan shirtMan pb-4">
 
               <div class="woman-card">
                 <div class="new">NEW</div>
@@ -705,7 +705,7 @@
               </div>
             </div>
             
-            <div class="col-sm-6 col-md-4 filterDiv woman pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan man pb-4">
 
               <div class="woman-card">
                 
@@ -727,7 +727,7 @@
               </div>
             </div>
             
-            <div class="col-sm-6 col-md-4 filterDiv woman swetashirt pb-4">
+            <div class="col-sm-6 col-md-4 filterDivMan man swetashirtMan pb-4">
 
               <div class="woman-card">
                 <div class="sale">
