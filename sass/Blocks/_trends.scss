@@ -1,37 +1,10 @@
 .trends-section{
   @include section-padding;
-  padding-bottom: 190px;
+  // padding-bottom: 110px;
   background-color: #f4f8fb;
   // background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
   color: white;
-  .trends__title{
-    text-align: center;
-    h5{
-      color: black;
-      font-size: 20px;
-      font-weight: 600;
-    }
-    h1{
-      position: relative;
-      display: inline-block;
-      font-size: 50px;
-      font-weight: 700;
-      font-style: italic;
-      color: aqua;
-      margin-top: 10px;
-      margin-bottom: 48px;
-      z-index: 65;
-      &::after{
-        content: "";
-        width: 50%;
-        height: 4px;
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        background-color: aqua;
-      }
-    }
-  }
+
   .trend__card{
     position: relative;
     cursor: pointer;
@@ -81,6 +54,35 @@
         border-bottom: 2px solid red;
         }
       }
+    }
+  }
+}
+
+.trends__title{
+  text-align: center;
+  h5{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  h1{
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    color: aqua;
+    margin-top: 10px;
+    margin-bottom: 48px;
+    z-index: 65;
+    &::after{
+      content: "";
+      width: 50%;
+      height: 4px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      background-color: aqua;
     }
   }
 }
