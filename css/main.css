@@ -876,20 +876,26 @@ nav.sticky {
 
 .womans-section .woman-large h1 {
   position: relative;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
   font-style: italic;
-  color: white;
-  -webkit-text-decoration: 5px solid white;
-          text-decoration: 5px solid white;
+  color: aqua;
   margin: 48px 0;
   z-index: 65;
 }
 
+.womans-section .woman-large h1::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: aqua;
+}
+
 .womans-section .woman-large h1 a {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  color: white;
+  color: aqua;
 }
 
 .womans-section #myBtnContainer,
@@ -973,6 +979,7 @@ nav.sticky {
   top: 0;
   right: 0;
   padding-top: 23px;
+  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,9 +987,9 @@ nav.sticky {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   cursor: pointer;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -996,7 +1003,7 @@ nav.sticky {
   color: black;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  padding: 7px;
+  padding: 10px 5px;
   cursor: pointer;
 }
 
@@ -1006,6 +1013,7 @@ nav.sticky {
           transform: scale(1.1);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  color: red;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info,
@@ -1018,32 +1026,57 @@ nav.sticky {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(aqua));
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), aqua);
   cursor: pointer;
+  padding: 15px;
+  padding-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-align: left;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info h4,
 .womans-section .filterDivMan .woman-card .woman__card__info h4 {
-  color: black;
+  font-size: 20px;
+  color: crimson;
   font-weight: 600;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info p,
 .womans-section .filterDivMan .woman-card .woman__card__info p {
+  font-size: 14px;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__info .card__btn,
+.womans-section .filterDivMan .woman-card .woman__card__info .card__btn {
+  display: inline-block;
+  color: black;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+}
+
+.womans-section .filterDiv .woman-card .woman__card__info .card__btn:hover,
+.womans-section .filterDivMan .woman-card .woman__card__info .card__btn:hover {
+  color: red;
+  border-bottom: 2px solid red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .womans-section .woman-filter {
@@ -1214,5 +1247,108 @@ nav.sticky {
     -webkit-transform: translateX(calc(-250px * 9));
             transform: translateX(calc(-250px * 9));
   }
+}
+
+.trends-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-bottom: 190px;
+  background-color: #f4f8fb;
+  color: white;
+}
+
+.trends-section .trends__title {
+  text-align: center;
+}
+
+.trends-section .trends__title h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.trends-section .trends__title h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  color: aqua;
+  margin-top: 10px;
+  margin-bottom: 48px;
+  z-index: 65;
+}
+
+.trends-section .trends__title h1::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: aqua;
+}
+
+.trends-section .trend__card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+.trends-section .trend__card .trend__card__img {
+  overflow: hidden;
+}
+
+.trends-section .trend__card .trend__card__img img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.trends-section .trend__card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.trends-section .trend__card .trend__info {
+  position: absolute;
+  bottom: -50%;
+  max-width: 85%;
+  color: black;
+  background-color: white;
+  left: 7.5%;
+  padding: 25px;
+}
+
+.trends-section .trend__card .trend__info p {
+  margin: 0;
+  font-size: 13px;
+  color: #9b9898;
+}
+
+.trends-section .trend__card .trend__info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  margin: 10px 0;
+}
+
+.trends-section .trend__card .trend__info .trend__btn {
+  border-bottom: 2px solid black;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.trends-section .trend__card .trend__info .trend__btn:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: red;
+  border-bottom: 2px solid red;
 }
 /*# sourceMappingURL=main.css.map */

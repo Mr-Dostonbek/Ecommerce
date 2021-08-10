@@ -1,0 +1,86 @@
+.trends-section{
+  @include section-padding;
+  padding-bottom: 190px;
+  background-color: #f4f8fb;
+  // background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
+  color: white;
+  .trends__title{
+    text-align: center;
+    h5{
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    h1{
+      position: relative;
+      display: inline-block;
+      font-size: 50px;
+      font-weight: 700;
+      font-style: italic;
+      color: aqua;
+      margin-top: 10px;
+      margin-bottom: 48px;
+      z-index: 65;
+      &::after{
+        content: "";
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background-color: aqua;
+      }
+    }
+  }
+  .trend__card{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 150px;
+    .trend__card__img{
+      overflow: hidden;
+      img{
+        transition: all 1s;
+        // width: 100%;
+      }
+    }
+    &:hover img{
+      transform: scale(1.2);
+      transition: all 1s;
+    }
+    .trend__info{
+      position: absolute;
+      bottom: -50%;
+      // bottom: 0;
+      max-width: 85%;
+      color: black;
+      background-color: white;
+      left: 7.5%;
+      padding: 25px;
+      p{
+        margin: 0;
+        font-size: 13px;
+        color: rgb(155, 152, 152);
+      }
+      h4{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 0;
+        margin: 10px 0;
+      }
+      .trend__btn{
+        border-bottom: 2px solid black;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 0.5s;
+        &:hover{
+        transition: all 0.5s;
+        color: red;
+        border-bottom: 2px solid red;
+        }
+      }
+    }
+  }
+}

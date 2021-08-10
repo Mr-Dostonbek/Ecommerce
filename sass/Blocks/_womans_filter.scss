@@ -19,16 +19,23 @@
     }
     h1 {
       position: relative;
-      font-size: 48px;
+      font-size: 50px;
       font-weight: 700;
       font-style: italic;
-      color: white;
-      text-decoration: 5px solid white;
+      color: aqua;
       margin: 48px 0;
       z-index: 65;
+      &::after{
+        content: "";
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background-color: aqua;
+      }
       a {
-        text-decoration: solid;
-        color: white;
+        color: aqua;
       }
     }
   }
@@ -86,9 +93,10 @@
         top: 0;
         right: 0;
         padding-top: 23px;
+        padding-right: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         cursor: pointer;
         transform: translateX(100%);
         transition: all 0.5s ease;
@@ -97,11 +105,12 @@
           font-size: 16px;
           color: black;
           transition: all 0.2s ease;
-          padding: 7px;
+          padding: 10px 5px;
           cursor: pointer;
           &:hover {
             transform: scale(1.1);
             transition: all 0.2s ease;
+            color: red;
           }
         }
       }
@@ -113,18 +122,37 @@
         height: 45%;
         background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), aqua);
         cursor: pointer;
+        padding: 15px;
+        padding-bottom: 0;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
         transform: translateY(100%);
         transition: all 0.5s ease;
+        text-align: left;
         h4 {
-          color: black;
+          font-size: 20px;
+          color: crimson;
           font-weight: 600;
         }
         p {
+          font-size: 14px;
           color: black;
-          font-weight: 500;
+          font-weight: 600;
+        }
+        .card__btn{
+          display: inline-block;
+          color: black;
+          border-bottom: 2px solid black;
+          font-weight: 600;
+            transition: all 0.5s ease;
+            white-space: nowrap;
+          &:hover{
+            color: red;
+          border-bottom: 2px solid red;
+          transform: scale(1.1);
+          transition: all 0.5s ease;
+          }
         }
       }
     }
