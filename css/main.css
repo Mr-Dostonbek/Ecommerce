@@ -131,10 +131,6 @@ nav .content .links {
   z-index: 2323;
 }
 
-.logo a img {
-  max-width: 120px;
-}
-
 .content .links li {
   list-style: none;
 }
@@ -1411,7 +1407,7 @@ nav.sticky {
   background: crimson;
   border-radius: 100px;
   margin-right: 8px;
-  color: aqua;
+  color: white;
 }
 
 .touch-section .contact-column-2 .contact-items button {
@@ -1482,6 +1478,10 @@ nav.sticky {
   padding-top: 80px;
 }
 
+.footer-area .footer-logo {
+  margin-bottom: 22px;
+}
+
 .footer-area .single-footer-widget {
   position: relative;
   z-index: 1;
@@ -1491,6 +1491,7 @@ nav.sticky {
 .footer-area .single-footer-widget p {
   color: aqua;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .footer-area .single-footer-widget .social-info a {
@@ -1503,15 +1504,21 @@ nav.sticky {
   color: white;
   margin-right: 5px;
   line-height: 38px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .footer-area .single-footer-widget .social-info a:hover, .footer-area .single-footer-widget .social-info a:focus {
-  border-color: aqua;
-  background-color: aqua;
+  border-color: crimson;
+  background-color: crimson;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .footer-area .single-footer-widget .widget-title h5 {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   text-transform: uppercase;
   margin-bottom: 30px;

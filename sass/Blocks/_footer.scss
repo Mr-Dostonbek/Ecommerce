@@ -16,6 +16,9 @@
     z-index: 1;
     padding-top: 80px;
   }
+  .footer-logo{
+    margin-bottom: 22px;
+  }
   .single-footer-widget {
     position: relative;
     z-index: 1;
@@ -23,6 +26,7 @@
     p {
       color: aqua;
       margin-bottom: 20px;
+      font-weight: 300;
     }
     .social-info {
       a {
@@ -35,15 +39,18 @@
         color: white;
         margin-right: 5px;
         line-height: 38px;
+        transition: all 1s;
         &:hover,
         &:focus {
-          border-color: aqua;
-          background-color: aqua;
+          border-color: crimson;
+          background-color: crimson;
+          transform: rotate(360deg);
+          transition: all 1s;
         }
       }
     }
     .widget-title h5 {
-      font-size: 22px;
+      font-size: 18px;
       color: white;
       text-transform: uppercase;
       margin-bottom: 30px;
