@@ -2,3 +2,8 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+@mixin section-smaller-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
