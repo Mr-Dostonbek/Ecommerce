@@ -80,6 +80,7 @@
 }
 
 @media (min-width: 768px) {
+
   .contact-column-1{
     padding-right: 48px;
   }
@@ -96,9 +97,34 @@
 
 @media (max-width: 767.98px) {
   .touch-section{
-    // @include section-smaller-padding;
+    @include section-smaller-padding;
+    .container-xl{
+      .trends__title{
+        h5{
+          font-size: 17px;
+        }
+        h1{
+          font-size: 48px;
+        }
+      }
+    }
     .contact-column-2{
       margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .touch-section{
+    .container-xl{
+      .trends__title{
+        h5{
+          font-size: 15px;
+        }
+        h1{
+          font-size: 36px;
+        }
+      }
     }
   }
 }

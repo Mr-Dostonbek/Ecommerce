@@ -181,3 +181,27 @@
     }
   }
 }
+
+
+@media (max-width: 1199.98px) {
+  .footer-area{
+    .container-xl{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-nav{
+    nav {
+      ul{
+        li{
+          .first-child{
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

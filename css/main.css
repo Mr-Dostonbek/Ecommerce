@@ -838,6 +838,7 @@ nav.sticky {
 
 .collection-section .collection__item .collection__item__content p {
   color: whitesmoke;
+  text-align: center;
 }
 
 .collection-section .collection__item .collection__item__content .btn {
@@ -876,13 +877,13 @@ nav.sticky {
   font-weight: 700;
   font-style: italic;
   color: aqua;
-  margin: 48px 0;
+  margin-bottom: 48px;
   z-index: 65;
 }
 
 .womans-section .woman-large h1::after {
   content: "";
-  width: 50%;
+  width: 200px;
   height: 4px;
   position: absolute;
   bottom: -5px;
@@ -1149,8 +1150,15 @@ nav.sticky {
 }
 
 .man-image {
-  padding-left: 48px;
-  padding-right: 0;
+  padding-left: 48px !important;
+  padding-right: 10px !important;
+}
+
+@media (max-width: 1198.98px) {
+  .womans-section .container-xl {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1158,16 +1166,22 @@ nav.sticky {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .womans-section .container-xl {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
   .womans-section .container-xl .man-image {
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0;
   }
   .womans-section .container-xl .woman-large {
     padding: 0;
     margin: 0;
+  }
+  .womans-section .container-xl .woman-large h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .womans-section .container-xl .woman-large h1 {
+    font-size: 36px;
   }
 }
 
@@ -1370,6 +1384,35 @@ nav.sticky {
   background-color: aqua;
 }
 
+@media (max-width: 1198.98px) {
+  .trends-section .container-xl {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trends-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .trends-section .container-xl .trends__title h5 {
+    font-size: 17px;
+  }
+  .trends-section .container-xl .trends__title h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .trends-section .container-xl .trends__title h5 {
+    font-size: 15px;
+  }
+  .trends-section .container-xl .trends__title h1 {
+    font-size: 36px;
+  }
+}
+
 .touch-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1474,8 +1517,27 @@ nav.sticky {
 }
 
 @media (max-width: 767.98px) {
+  .touch-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .touch-section .container-xl .trends__title h5 {
+    font-size: 17px;
+  }
+  .touch-section .container-xl .trends__title h1 {
+    font-size: 48px;
+  }
   .touch-section .contact-column-2 {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .touch-section .container-xl .trends__title h5 {
+    font-size: 15px;
+  }
+  .touch-section .container-xl .trends__title h1 {
+    font-size: 36px;
   }
 }
 
@@ -1692,5 +1754,18 @@ nav.sticky {
 
 .footer-area .footer-bottom-area .footer-nav ul li:last-child a {
   margin-right: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .footer-area .container-xl {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-nav nav ul li .first-child {
+    margin-left: 0 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
