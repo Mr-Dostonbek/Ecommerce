@@ -8,7 +8,7 @@
   <title>Ecommerce</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/aos.css" />
-  <link rel="shortcut icon" href="images/shopping (1).png" />
+  <!-- <link rel="shortcut icon" href="images/shopping (1).png" /> -->
   <link rel="stylesheet" href="css/splide.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome-free-5.0.1/css/fontawesome-all.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,16 +69,18 @@
             </div>
 
             <ul class="links">
-              <label for="show-menu" class="cancel__arrow mb-5">
-                <i class="fas fa-arrow-right text-dark"></i>
-              </label>
+              <li>
+                <label id="menu-arrow" for="show-menu" class="cancel__arrow mb-5">
+                  <i class="fas fa-arrow-right text-dark"></i>
+                </label>
+              </li>
               <li>
                 <a href="#" class="desktop-link">HOME</a>
-                <label class="mobile__chevron">HOME</label>
+                <label for="home" class="mobile__chevron">HOME</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">SHOP</a>
-                <label class="mobile__chevron">SHOP</label>
+                <label for="shop" class="mobile__chevron">SHOP</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">
@@ -152,11 +154,11 @@
               </li>
               <li>
                 <a href="#" class="desktop-link">BLOG</a>
-                <label class="mobile__chevron">BLOG</label>
+                <label for="blog" class="mobile__chevron">BLOG</label>
               </li>
               <li>
                 <a href="#" class="desktop-link">CONTACT</a>
-                <label class="mobile__chevron">CONTACT</label>
+                <label for="contact" class="mobile__chevron">CONTACT</label>
               </li>
             </ul>
           </div>
@@ -209,7 +211,7 @@
             <label for="show-user" class="cancel-search">
               <i class="fa fa-user position-relative"></i>
             </label>
-            <label for="">
+            <label for="number">
               <i class="fa fa-shopping-cart position-relative">
                 <span class="
                       position-absolute
@@ -240,7 +242,7 @@
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
-          <img src="images/men-slide-1.jpg" />
+          <img alt="image" src="images/men-slide-1.jpg" />
           <div class="splide__overlay">
             <div class="container-xl splide__container">
               <div class="text text-one">
@@ -257,7 +259,7 @@
           </div>
         </li>
         <li class="splide__slide">
-          <img src="images/slide-3.jpg" />
+          <img alt="image" src="images/slide-3.jpg" />
           <div class="splide__overlay">
             <div class="container-xl splide__container">
               <div class="text text__two mx-lg-auto text-center">
@@ -275,7 +277,7 @@
           </div>
         </li>
         <li class="splide__slide">
-          <img src="images/slide-2.jpg" />
+          <img alt="image" src="images/slide-2.jpg" />
           <div class="splide__overlay">
             <div class="container-xl splide__container">
               <div class="text text__three ml-lg-a">
@@ -306,7 +308,7 @@
 
         <div class="col-md-4 m-0 p-0">
           <div class="collection__item">
-            <img src="images/slide-4.jpg" alt="">
+            <img alt="image" src="images/slide-4.jpg" alt="">
             <div class="collection__item__content">
               <h4>WOMEN'S SECTION</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -317,7 +319,7 @@
 
         <div class="col-md-4 m-0 p-0">
           <div class="collection__item">
-            <img src="images/collection.jpg" alt="">
+            <img alt="image" src="images/collection.jpg" alt="">
             <div class="collection__item__content">
               <h4>MEN'S SECTION</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -328,7 +330,7 @@
 
         <div class="col-md-4 m-0 p-0">
           <div class="collection__item">
-            <img src="images/slide-1.jpg" alt="">
+            <img alt="image" src="images/slide-1.jpg" alt="">
             <div class="collection__item__content">
               <h4>WOMEN'S PRODUCT</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -346,8 +348,8 @@
   <!-- Women's section start -->
 
   <section class="womans-section">
-    <img class="position-absolute top-0 left-0 d-none d-sm-block" src="images/banner_overlay_1.png" alt="">
-    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <!-- <img class="position-absolute top-0 left-0 d-none d-sm-block" src="images/banner_overlay_1.png" alt="">
+    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt=""> -->
     <div class="container-xl">
       <div class="row">
 
@@ -356,7 +358,7 @@
             <a href="#">#forWoman</a>
           </h1>
           <div class="woman__large__img mb-5 m-md-0">
-            <img src="images/women-large.jpg" alt="">
+            <img alt="image" src="images/women-large.jpg" alt="">
           </div>
         </div>
 
@@ -383,7 +385,7 @@
                   SALE
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/women-3.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-3.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -408,7 +410,7 @@
               <div class="woman-card">
 
                 <div class="woman__card__img">
-                  <img src="images/women-1.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-1.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -435,7 +437,7 @@
                   NEW
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/women-2.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-2.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -462,7 +464,7 @@
                   NEW
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/women-1.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-1.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -489,7 +491,7 @@
                   SALE
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/women-4.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-4.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -514,7 +516,7 @@
               <div class="woman-card">
 
                 <div class="woman__card__img">
-                  <img src="images/women-3.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/women-3.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -548,55 +550,55 @@
       <div class="row auto-slide flex-nowrap">
         <div class="col-sm-6 col-md-3 slider">
           <div class="new">NEW</div>
-          <img src="images/man-1.jpg" alt="">
+          <img alt="image" src="images/man-1.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
-          <img src="images/man-2.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-3 slider">
-          <div class="sale">SALE</div>
-          <img src="images/man-3.jpg" alt="">
-        </div>
-        <div class="col-sm-6 col-md-3 slider">
-          <div class="new">NEW</div>
-          <img src="images/man-4.jpg" alt="">
+          <img alt="image" src="images/man-2.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
           <div class="sale">SALE</div>
-          <img src="images/man-1.jpg" alt="">
+          <img alt="image" src="images/man-3.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
           <div class="new">NEW</div>
-          <img src="images/man-2.jpg" alt="">
+          <img alt="image" src="images/man-4.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
-          <img src="images/man-3.jpg" alt="">
+          <div class="sale">SALE</div>
+          <img alt="image" src="images/man-1.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <div class="new">NEW</div>
+          <img alt="image" src="images/man-2.jpg" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3 slider">
+          <img alt="image" src="images/man-3.jpg" alt="">
         </div>
 
         <div class="col-sm-6 col-md-3 slider">
           <div class="new">NEW</div>
-          <img src="images/man-1.jpg" alt="">
+          <img alt="image" src="images/man-1.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
           <div class="sale">SALE</div>
-          <img src="images/man-2.jpg" alt="">
+          <img alt="image" src="images/man-2.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
-          <img src="images/man-3.jpg" alt="">
+          <img alt="image" src="images/man-3.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
           <div class="new">NEW</div>
-          <img src="images/man-4.jpg" alt="">
+          <img alt="image" src="images/man-4.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
-          <img src="images/man-1.jpg" alt="">
+          <img alt="image" src="images/man-1.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
           <div class="sale">SALE</div>
-          <img src="images/man-2.jpg" alt="">
+          <img alt="image" src="images/man-2.jpg" alt="">
         </div>
         <div class="col-sm-6 col-md-3 slider">
-          <img src="images/man-3.jpg" alt="">
+          <img alt="image" src="images/man-3.jpg" alt="">
         </div>
 
       </div>
@@ -608,9 +610,9 @@
   <!-- Man's section start -->
 
   <section class="womans-section">
-    <img class="position-absolute top-0 left-0 d-none d-sm-block" style="z-index: 1;" src="images/banner_overlay_1.png"
+    <!-- <img class="position-absolute top-0 left-0 d-none d-sm-block" style="z-index: 1;" src="images/banner_overlay_1.png"
       alt="">
-    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt="">
+    <img class="position-absolute top-0 right-0 d-sm-block" style="right: 0;" src="images/banner_overlay_2.png" alt=""> -->
     <div class="container-xl">
       <div class="row">
 
@@ -619,7 +621,7 @@
             <a href="#">#forMan</a>
           </h1>
           <div class="woman__large__img overflow-hidden mb-5 m-md-0">
-            <img src="images/man-large.jpg" alt="">
+            <img alt="image" src="images/man-large.jpg" alt="">
           </div>
         </div>
 
@@ -644,7 +646,7 @@
               <div class="woman-card">
                 <div class="new">NEW</div>
                 <div class="woman__card__img">
-                  <img src="images/man-1.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-1.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -671,7 +673,7 @@
                   SALE
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/man-2.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-2.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -696,7 +698,7 @@
               <div class="woman-card">
 
                 <div class="woman__card__img">
-                  <img src="images/man-3.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-3.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -721,7 +723,7 @@
               <div class="woman-card">
                 <div class="new">NEW</div>
                 <div class="woman__card__img">
-                  <img src="images/man-4.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-4.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -746,7 +748,7 @@
               <div class="woman-card">
 
                 <div class="woman__card__img">
-                  <img src="images/man-3.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-3.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -773,7 +775,7 @@
                   SALE
                 </div>
                 <div class="woman__card__img">
-                  <img src="images/man-2.jpg" class="img-fluid" alt="">
+                  <img alt="image" src="images/man-2.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="woman__card__socials">
@@ -817,7 +819,7 @@
         <div class="col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="trend__card">
             <div class="trend__card__img">
-              <img src="images/latest-1.jpg" alt="">
+              <img alt="image" src="images/latest-1.jpg" alt="">
             </div>
             <div class="trend__info">
               <p><span class="fa fa-calendar"></span> 27 October 2021</p>
@@ -830,7 +832,7 @@
         <div class="col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="trend__card">
             <div class="trend__card__img">
-              <img src="images/latest-2.jpg" alt="">
+              <img alt="image" src="images/latest-2.jpg" alt="">
             </div>
             <div class="trend__info">
               <p><span class="fa fa-calendar"></span> 30 October 2021</p>
@@ -843,7 +845,7 @@
         <div class="col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="trend__card">
             <div class="trend__card__img">
-              <img src="images/latest-3.jpg" alt="">
+              <img alt="image" src="images/latest-3.jpg" alt="">
             </div>
             <div class="trend__info">
               <p><span class="fa fa-calendar"></span> 5 November 2021</p>
@@ -1000,7 +1002,7 @@
 
               <div class="single-best-seller-product d-flex align-items-center">
                 <div class="product-thumbnail">
-                  <a href="shop-details.html"><img src="images/about-me-img1.png" alt=""></a>
+                  <a href="shop-details.html"><img alt="image" src="images/about-me-img1.png" alt=""></a>
                 </div>
                 <div class="product-info">
                   <a href="shop-details.html">Black T-shirt</a>
@@ -1010,7 +1012,7 @@
 
               <div class="single-best-seller-product d-flex align-items-center">
                 <div class="product-thumbnail">
-                  <a href="shop-details.html"><img src="images/about-me-img3.png" alt=""></a>
+                  <a href="shop-details.html"><img alt="image" src="images/about-me-img3.png" alt=""></a>
                 </div>
                 <div class="product-info">
                   <a href="shop-details.html">Brown Scarf</a>

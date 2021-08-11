@@ -67,6 +67,10 @@ nav .content .links{
   display: flex;
   z-index: 2323;
 }
+#menu-arrow{
+    &:hover{
+      background: transparent;}
+}
 .content .links li{
   list-style: none;
 }

@@ -1,13 +1,14 @@
 .autoSlider-section {
   @include section-padding;
   position: relative;
-  background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
+  // background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
+  background-color: #111117;
   overflow: hidden;
   &::after,
   &::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), aqua);
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), black);
     width: 15%;
     height: 100%;
     z-index: 2;
