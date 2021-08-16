@@ -34,20 +34,23 @@ ul {
 
 .btn {
   text-transform: uppercase;
-  color: #3b3131;
-  font-weight: 600;
-  font-size: 17px;
-  background: aqua;
-  border: 2px solid aqua;
+  letter-spacing: 0.8px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background: #001219;
+  border: 3px solid #001219;
   padding: 9px 25px;
   white-space: nowrap;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
 .btn:hover {
-  background: #17ebeb;
-  border-color: #17ebeb;
+  background: #001219;
+  border-color: #001219;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
   color: white;
@@ -56,11 +59,11 @@ ul {
 .btn-outline {
   background: transparent;
   margin-left: 24px;
-  color: black;
+  color: white;
 }
 
 .navbar-fluid {
-  background: black;
+  background: #001219;
 }
 
 .navbar-info {
@@ -73,7 +76,7 @@ ul {
 }
 
 .navbar-info a {
-  color: gainsboro;
+  color: gray;
   font-family: 'Monserrat', Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 14.5px;
@@ -82,10 +85,9 @@ ul {
 }
 
 .navbar-info a:hover {
-  color: aqua;
+  color: gainsboro;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
-  text-shadow: 0 0 10px #17ebeb;
 }
 
 .navbar-info .contact-right > a {
@@ -95,25 +97,23 @@ ul {
 }
 
 .navbar-info .contact-right > a:hover {
-  color: aqua;
+  color: gainsboro;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
-  text-shadow: 0 0 10px #17ebeb;
 }
 
 .navbar-info .message span {
   padding: 0 16px;
-  color: gainsboro;
+  color: gray;
   cursor: pointer;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
 .navbar-info .message span:hover {
-  color: aqua;
+  color: gainsboro;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
-  text-shadow: 0 0 10px #17ebeb;
 }
 
 .navbar-info .message > span:last-child {
@@ -558,7 +558,7 @@ nav.sticky {
 
 .splide__slide .splide__overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -573,6 +573,7 @@ nav.sticky {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 33;
 }
 
 .splide__slide .splide__overlay .text {
@@ -584,7 +585,7 @@ nav.sticky {
 .splide__slide .splide__overlay .text h1 {
   font-size: 72px;
   font-weight: 900;
-  color: aqua;
+  color: white;
   padding: 0;
   margin: 24px 0;
 }
@@ -594,7 +595,7 @@ nav.sticky {
   font-weight: 500;
   padding: 0;
   margin: 24px 0;
-  color: whitesmoke;
+  color: #CAD2C5;
 }
 
 .splide__pagination {
@@ -606,6 +607,7 @@ nav.sticky {
   top: 50%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  z-index: 32323;
 }
 
 .splide__pagination .splide__pagination__page {
@@ -613,7 +615,7 @@ nav.sticky {
   border-radius: 3px;
   height: 20px;
   background: transparent;
-  border: 2px solid aqua;
+  border: 2px solid white;
   margin: 5px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -626,8 +628,6 @@ nav.sticky {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: transparent;
-  -webkit-box-shadow: 0 0 10px #17ebeb;
-          box-shadow: 0 0 10px #17ebeb;
 }
 
 .splide__arrows {
@@ -797,15 +797,15 @@ nav.sticky {
 }
 
 .collection-section .collection__item:hover .collection__item__content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .collection-section .collection__item .collection__item__content {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -825,6 +825,7 @@ nav.sticky {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 50px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -832,23 +833,23 @@ nav.sticky {
 .collection-section .collection__item .collection__item__content h4 {
   font-size: 24px;
   font-weight: 600;
-  color: aqua;
+  color: white;
 }
 
 .collection-section .collection__item .collection__item__content p {
-  color: whitesmoke;
+  color: #CAD2C5;
   text-align: center;
 }
 
 .collection-section .collection__item .collection__item__content .btn {
-  color: black;
+  color: #001219;
   display: block;
 }
 
 .womans-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #111117;
+  background-color: #CAD2C5;
   position: relative;
   overflow: hidden;
 }
@@ -875,23 +876,13 @@ nav.sticky {
   font-size: 50px;
   font-weight: 700;
   font-style: italic;
-  color: aqua;
+  color: black;
   margin-bottom: 48px;
   z-index: 65;
 }
 
-.womans-section .woman-large h1::after {
-  content: "";
-  width: 200px;
-  height: 4px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background-color: aqua;
-}
-
 .womans-section .woman-large h1 a {
-  color: aqua;
+  color: black;
 }
 
 .womans-section #myBtnContainer,
@@ -916,11 +907,13 @@ nav.sticky {
   overflow: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: #fff;
+  border-bottom: 2px solid black;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__img,
 .womans-section .filterDivMan .woman-card .woman__card__img {
-  background-color: #000;
+  background-color: #EFEFEF;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__img img,
@@ -966,13 +959,13 @@ nav.sticky {
 .womans-section .filterDiv .woman-card .woman__card__socials,
 .womans-section .filterDivMan .woman-card .woman__card__socials {
   width: 25%;
-  height: 100%;
-  background-color: black;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
   position: absolute;
   top: 0;
   right: 0;
   padding-top: 23px;
-  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,9 +973,9 @@ nav.sticky {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -1014,7 +1007,8 @@ nav.sticky {
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
   cursor: pointer;
   padding: 15px;
   padding-bottom: 0;
@@ -1027,8 +1021,8 @@ nav.sticky {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(102%);
+          transform: translateY(102%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-align: left;
@@ -1037,15 +1031,17 @@ nav.sticky {
 .womans-section .filterDiv .woman-card .woman__card__info h4,
 .womans-section .filterDivMan .woman-card .woman__card__info h4 {
   font-size: 20px;
-  color: red;
+  color: black;
   font-weight: 600;
+  letter-spacing: 0.7px;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info p,
 .womans-section .filterDivMan .woman-card .woman__card__info p {
   font-size: 14px;
   color: white;
-  font-weight: 600;
+  letter-spacing: 0.7px;
+  font-weight: 500;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info .card__btn,
@@ -1053,9 +1049,10 @@ nav.sticky {
   display: inline-block;
   color: white;
   border-bottom: 2px solid white;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  letter-spacing: 1px;
   white-space: nowrap;
 }
 
@@ -1082,7 +1079,7 @@ nav.sticky {
 .womans-section .filterBtnMan {
   display: inline-block;
   padding: 8px 16px;
-  color: white;
+  color: black;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   cursor: pointer;
@@ -1098,18 +1095,15 @@ nav.sticky {
 
 .womans-section .filterBtn:hover,
 .womans-section .filterBtnMan:hover {
-  border-bottom: 2px solid aqua;
-  color: aqua;
-  text-shadow: 0 0 10px #17ebeb;
+  color: black;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .womans-section .filterBtn.active,
 .womans-section .filterBtnMan.activeMan {
-  border-bottom: 2px solid aqua;
-  color: aqua;
-  text-shadow: 0 0 10px #17ebeb;
+  border-bottom: 2px solid black;
+  color: black;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -1147,6 +1141,15 @@ nav.sticky {
   padding-right: 10px !important;
 }
 
+.hashtag {
+  position: absolute;
+  top: -95%;
+  left: -20%;
+  font-size: 170px;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 30;
+}
+
 @media (max-width: 1198.98px) {
   .womans-section .container-xl {
     padding-right: 25px;
@@ -1182,7 +1185,7 @@ nav.sticky {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
-  background-color: #111117;
+  background-color: #001219;
   overflow: hidden;
 }
 
@@ -1328,20 +1331,35 @@ nav.sticky {
 }
 
 .trends-section .trend__card .trend__info .trend__btn {
-  border-bottom: 2px solid black;
   color: black;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  position: relative;
 }
 
 .trends-section .trend__card .trend__info .trend__btn:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: red;
-  border-bottom: 2px solid red;
+}
+
+.trends-section .trend__card .trend__info .trend__btn::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1.5px;
+  background-color: crimson;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.trends-section .trend__card .trend__info .trend__btn:hover::after {
+  width: 100%;
 }
 
 .trends__title {
@@ -1352,6 +1370,7 @@ nav.sticky {
   color: black;
   font-size: 20px;
   font-weight: 600;
+  z-index: 32;
 }
 
 .trends__title h1 {
@@ -1360,20 +1379,10 @@ nav.sticky {
   font-size: 50px;
   font-weight: 700;
   font-style: italic;
-  color: aqua;
+  color: black;
   margin-top: 10px;
   margin-bottom: 48px;
   z-index: 65;
-}
-
-.trends__title h1::after {
-  content: "";
-  width: 50%;
-  height: 4px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background-color: aqua;
 }
 
 @media (max-width: 1198.98px) {
@@ -1408,7 +1417,7 @@ nav.sticky {
 .touch-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: black;
+  background-color: #CAD2C5;
 }
 
 .touch-section .contact-column-1 {
@@ -1427,7 +1436,7 @@ nav.sticky {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
-  color: aqua;
+  color: #001219;
   overflow-wrap: break-word;
   margin-bottom: 1.5rem;
 }
@@ -1437,7 +1446,7 @@ nav.sticky {
   font-weight: 400;
   line-height: 1.5;
   margin: 1.5rem 0px;
-  color: white;
+  color: gray;
 }
 
 .touch-section .contact-column-2 .last-p {
@@ -1452,7 +1461,7 @@ nav.sticky {
 .touch-section .contact-column-2 .contact-items .contact-item a {
   font-size: 1.2rem;
   font-weight: 400;
-  color: aqua;
+  color: #001219;
   padding: 5px 0px;
 }
 
@@ -1469,7 +1478,7 @@ nav.sticky {
 }
 
 .touch-section .contact-column-2 .contact-items button {
-  color: aqua;
+  color: #001219;
   margin-left: 0;
 }
 
@@ -1539,7 +1548,7 @@ nav.sticky {
 }
 
 .footer-area::after {
-  background-color: #005;
+  background-color: #011627;
   position: absolute;
   z-index: -1;
   top: 0;

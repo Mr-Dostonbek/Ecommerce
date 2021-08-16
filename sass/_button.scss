@@ -1,16 +1,19 @@
 .btn{
   text-transform: uppercase;
-  color: rgb(59, 49, 49);
-  font-weight: 600;
-  font-size: 17px;
-  background: aqua;
-  border: 2px solid aqua;
+  letter-spacing: 0.8px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  background: #001219;
+  border: 3px solid #001219;
   padding: 9px 25px;
   white-space: nowrap;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   transition: all .4s ease-out 0s;
   &:hover{
-    background: rgb(23, 235, 235);
-    border-color: rgb(23, 235, 235);
+    background: #001219;
+    border-color: #001219;
     transition: all .4s ease-out 0s;
     color: white;
     // text-shadow: 0 0 5px black;
@@ -20,6 +23,6 @@
 .btn-outline{
   background: transparent;
   margin-left: 24px;
-  color: black;
+  color: white;
 }
 

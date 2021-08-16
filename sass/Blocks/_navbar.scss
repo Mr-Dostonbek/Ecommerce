@@ -1,5 +1,5 @@
 .navbar-fluid{
-  background: black;
+  background: #001219;
 }
 .navbar-info{
   line-height: 50px;
@@ -8,35 +8,32 @@
     padding-right: 16px;
   }
   a{
-    color: gainsboro;
+    color: gray;
     font-family: 'Monserrat', Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 14.5px;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: aqua;
+      color: gainsboro;
       transition: all .4s ease-out 0s;
-      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .contact-right > a{
     padding: 0px 16px;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: aqua;
+      color: gainsboro;
       transition: all .4s ease-out 0s;
-      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .message span{
     padding: 0 16px;
-    color: gainsboro;
+    color: gray;
     cursor: pointer;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: aqua;
+      color: gainsboro;
       transition: all .4s ease-out 0s;
-      text-shadow: 0 0 10px rgb(23, 235, 235);
     }
   }
   .message > span:last-child{

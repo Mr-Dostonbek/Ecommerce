@@ -1,6 +1,6 @@
 .touch-section{
   @include section-padding;
-  background: black;
+  background-color: #CAD2C5;
   .contact-column-1{
     max-width: 780px;
     .video__title{
@@ -15,7 +15,7 @@
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 1.2;
-      color: aqua;
+      color: #001219;
       overflow-wrap: break-word;
       margin-bottom: 1.5rem;
     }
@@ -24,7 +24,7 @@
       font-weight: 400;
       line-height: 1.5;
       margin: 1.5rem 0px;
-      color: white;
+      color: gray;
     }
     .last-p{
       margin-bottom: 37px;
@@ -36,7 +36,7 @@
         a{
           font-size: 1.2rem;
           font-weight: 400;
-          color: aqua;
+          color: #001219;
           padding: 5px 0px;
           span{
             width: 45px;
@@ -52,7 +52,7 @@
         }
       }
       button{
-        color: aqua;
+        color: #001219;
         margin-left: 0;
         &:hover{
           color: white;

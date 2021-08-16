@@ -1,24 +1,24 @@
-.trends-section{
+.trends-section {
   @include section-padding;
   background-color: #f4f8fb;
   color: white;
 
-  .trend__card{
+  .trend__card {
     position: relative;
     cursor: pointer;
     margin-bottom: 150px;
-    .trend__card__img{
+    .trend__card__img {
       overflow: hidden;
-      img{
+      img {
         transition: all 1s;
         // width: 100%;
       }
     }
-    &:hover img{
+    &:hover img {
       transform: scale(1.2);
       transition: all 1s;
     }
-    .trend__info{
+    .trend__info {
       position: absolute;
       bottom: -50%;
       // bottom: 0;
@@ -27,67 +27,75 @@
       background-color: white;
       left: 7.5%;
       padding: 25px;
-      p{
+      p {
         margin: 0;
         font-size: 13px;
         color: rgb(155, 152, 152);
       }
-      h4{
+      h4 {
         font-size: 18px;
         font-weight: 600;
         line-height: 1.5;
         margin: 0;
         margin: 10px 0;
       }
-      .trend__btn{
-        border-bottom: 2px solid black;
+      .trend__btn {
         color: black;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 2px;
         transition: all 0.5s;
-        &:hover{
-        transition: all 0.5s;
-        color: red;
-        border-bottom: 2px solid red;
+        position: relative;
+        &:hover {
+          transition: all 0.5s;
+          color: red;
         }
+
+        &::after{
+          content: '';
+          position: absolute;
+          width: 50%;
+          height: 1.5px;
+          background-color: crimson;
+          left: 0;
+          bottom: -5px;
+          transition: all ease .5s;
+
+        }
+
+        &:hover::after{
+          width: 100%;
+        }
+        
       }
     }
   }
 }
 
-.trends__title{
+.trends__title {
   text-align: center;
-  h5{
+  h5 {
     color: black;
     font-size: 20px;
     font-weight: 600;
+    z-index: 32;
   }
-  h1{
+  h1 {
     position: relative;
     display: inline-block;
     font-size: 50px;
     font-weight: 700;
     font-style: italic;
-    color: aqua;
+    color: black;
     margin-top: 10px;
     margin-bottom: 48px;
     z-index: 65;
-    &::after{
-      content: "";
-      width: 50%;
-      height: 4px;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      background-color: aqua;
-    }
   }
 }
 
 @media (max-width: 1198.98px) {
-  .trends-section{
-    .container-xl{
+  .trends-section {
+    .container-xl {
       padding-right: 25px;
       padding-left: 25px;
     }
@@ -95,14 +103,14 @@
 }
 
 @media (max-width: 767.98px) {
-  .trends-section{
+  .trends-section {
     @include section-smaller-padding;
-    .container-xl{
-      .trends__title{
-        h5{
+    .container-xl {
+      .trends__title {
+        h5 {
           font-size: 17px;
         }
-        h1{
+        h1 {
           font-size: 48px;
         }
       }
@@ -111,16 +119,16 @@
 }
 
 @media (max-width: 576.98px) {
- .trends-section{
-   .container-xl{
-     .trends__title{
-      h5{
-        font-size: 15px;
+  .trends-section {
+    .container-xl {
+      .trends__title {
+        h5 {
+          font-size: 15px;
+        }
+        h1 {
+          font-size: 36px;
+        }
       }
-      h1{
-        font-size: 36px;
-      }
-     }
-   }
- } 
+    }
+  }
 }
