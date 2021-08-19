@@ -38,8 +38,8 @@ ul {
   color: white;
   font-weight: 500;
   font-size: 14px;
-  background: #001219;
-  border: 3px solid #001219;
+  background: #fc635e;
+  border: 2px solid #fc635e;
   padding: 9px 25px;
   white-space: nowrap;
   letter-spacing: 2px;
@@ -49,8 +49,8 @@ ul {
 }
 
 .btn:hover {
-  background: #001219;
-  border-color: #001219;
+  background: #fc635e;
+  border-color: #fc635e;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
   color: white;
@@ -59,7 +59,7 @@ ul {
 .btn-outline {
   background: transparent;
   margin-left: 24px;
-  color: white;
+  color: black;
 }
 
 .navbar-fluid {
@@ -173,13 +173,13 @@ nav .content .links {
 .logo a {
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
-  color: aqua;
+  color: #001219;
   font-weight: 600;
 }
 
 .content .links li a {
   display: block;
-  color: white;
+  color: #001219;
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
@@ -194,21 +194,27 @@ nav .content .links {
 
 .content .links li a:hover,
 .content .links li label:hover {
-  color: aqua;
-  font-weight: 500;
-  background: black;
+  color: #fc635e;
+  background: #CAD2C5;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
-  text-shadow: 0 0 10px #17ebeb;
 }
 
 .content .links > li > a:hover {
   background: transparent;
 }
 
+.content .links > li > a {
+  font-weight: 600;
+}
+
+.content .links > li > a:hover {
+  font-weight: 600 !important;
+}
+
 .wrapper .search-icon,
 .wrapper .menu-icon {
-  color: #fff;
+  color: #001219;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
@@ -281,12 +287,12 @@ nav .content .links {
 
 .content .links ul li ul li a,
 .content .links ul li a {
-  color: black;
+  color: #001219;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 0.9rem;
-  color: black;
+  color: #001219;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -304,11 +310,11 @@ nav .content .links {
   padding: 3px 7px;
   display: inline-block;
   border-radius: 100px;
-  background-color: aqua;
+  background-color: #fc635e;
   text-align: center;
   font-weight: 500;
   font-size: 12px;
-  color: black;
+  color: #001219;
   margin: 0;
 }
 
@@ -325,7 +331,7 @@ nav .content .links {
 }
 
 .nav-contact label:hover {
-  color: aqua;
+  color: #fc635e;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
@@ -335,18 +341,18 @@ nav .content .links {
   top: 0;
   right: -200%;
   height: 100vh;
-  color: black;
+  color: #001219;
   background: white;
   margin-left: 0;
   max-width: 500px;
-  z-index: 32;
+  z-index: 9999999;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .cancel__arrow {
   padding: 25px;
-  color: black;
+  color: #001219;
   cursor: pointer;
 }
 
@@ -361,7 +367,7 @@ nav .content .links {
 
 .search__form h1 {
   font-size: 48px;
-  color: black;
+  color: #001219;
   font-weight: 900;
   margin: 24px 0;
 }
@@ -381,7 +387,7 @@ nav .content .links {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: aqua;
+  color: #fc635e;
   text-decoration: none;
 }
 
@@ -396,12 +402,27 @@ nav .content .links {
   border: none;
   border-radius: 4px;
   line-height: 1.2;
-  color: blue;
   margin-bottom: 20px;
 }
 
 .search__form input:focus {
   outline: none;
+}
+
+.search__form .badge {
+  display: inline-block;
+  font-size: 17px;
+  color: #fc635e;
+  font-weight: 500;
+  margin: 0 10px 13px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.075);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.search__form .badge:hover {
+  background: #cad2c5;
 }
 
 #show-search:checked ~ .search-content {
@@ -422,7 +443,7 @@ nav.sticky {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #001219;
   padding: 10px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -433,7 +454,6 @@ nav.sticky {
 @media screen and (max-width: 1198.98px) {
   .wrapper {
     top: 0;
-    cursor: w-resize;
   }
   .wrapper .container-xl {
     padding-left: 25px;
@@ -541,7 +561,7 @@ nav.sticky {
 .splide__slide {
   position: relative;
   height: calc(100vh - 50px);
-  background-color: #10109e;
+  background-color: #001219;
 }
 
 .splide__slide img {
@@ -558,7 +578,6 @@ nav.sticky {
 
 .splide__slide .splide__overlay {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   top: 0;
@@ -585,7 +604,7 @@ nav.sticky {
 .splide__slide .splide__overlay .text h1 {
   font-size: 72px;
   font-weight: 900;
-  color: white;
+  color: #fc635e;
   padding: 0;
   margin: 24px 0;
 }
@@ -595,7 +614,7 @@ nav.sticky {
   font-weight: 500;
   padding: 0;
   margin: 24px 0;
-  color: #CAD2C5;
+  color: #001219;
 }
 
 .splide__pagination {
@@ -607,7 +626,7 @@ nav.sticky {
   top: 50%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  z-index: 32323;
+  z-index: 1;
 }
 
 .splide__pagination .splide__pagination__page {
@@ -615,7 +634,7 @@ nav.sticky {
   border-radius: 3px;
   height: 20px;
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid #001219;
   margin: 5px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -780,11 +799,18 @@ nav.sticky {
   }
 }
 
+.collection-section {
+  background: #fff;
+}
+
 .collection-section .collection__item {
   position: relative;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.37);
+          box-shadow: 0 0 9px rgba(0, 0, 0, 0.37);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .collection-section .collection__item:hover img {
@@ -797,8 +823,8 @@ nav.sticky {
 }
 
 .collection-section .collection__item:hover .collection__item__content {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -831,7 +857,7 @@ nav.sticky {
 }
 
 .collection-section .collection__item .collection__item__content h4 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: white;
 }
@@ -842,8 +868,15 @@ nav.sticky {
 }
 
 .collection-section .collection__item .collection__item__content .btn {
-  color: #001219;
+  color: white;
   display: block;
+}
+
+@media (max-width: 1199.98px) {
+  .collection-section .container-xl {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .womans-section {
@@ -856,7 +889,7 @@ nav.sticky {
 
 .womans-section .woman-large {
   padding-right: 48px;
-  z-index: 32;
+  z-index: 1;
 }
 
 .womans-section .woman-large .woman__large__img {
@@ -868,21 +901,21 @@ nav.sticky {
   position: relative;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  z-index: 65;
+  z-index: 6565;
 }
 
 .womans-section .woman-large h1 {
   position: relative;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
-  color: black;
+  color: #001219;
   margin-bottom: 48px;
-  z-index: 65;
+  z-index: 6655;
 }
 
 .womans-section .woman-large h1 a {
-  color: black;
+  color: #001219;
 }
 
 .womans-section #myBtnContainer,
@@ -908,7 +941,7 @@ nav.sticky {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #fff;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid #fc635e;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__img,
@@ -960,7 +993,6 @@ nav.sticky {
 .womans-section .filterDivMan .woman-card .woman__card__socials {
   width: 25%;
   height: 70%;
-  background-color: rgba(0, 0, 0, 0.5);
   border: none;
   position: absolute;
   top: 0;
@@ -986,7 +1018,7 @@ nav.sticky {
 .womans-section .filterDiv .woman-card .woman__card__socials span,
 .womans-section .filterDivMan .woman-card .woman__card__socials span {
   font-size: 16px;
-  color: white;
+  color: #001219;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   padding: 10px 5px;
@@ -997,7 +1029,7 @@ nav.sticky {
 .womans-section .filterDivMan .woman-card .woman__card__socials span:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  color: red;
+  color: #fc635e;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info,
@@ -1007,7 +1039,6 @@ nav.sticky {
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
   padding: 15px;
@@ -1031,15 +1062,16 @@ nav.sticky {
 .womans-section .filterDiv .woman-card .woman__card__info h4,
 .womans-section .filterDivMan .woman-card .woman__card__info h4 {
   font-size: 20px;
-  color: black;
+  color: #fc635e;
   font-weight: 600;
   letter-spacing: 0.7px;
+  z-index: 232;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info p,
 .womans-section .filterDivMan .woman-card .woman__card__info p {
   font-size: 14px;
-  color: white;
+  color: #001219;
   letter-spacing: 0.7px;
   font-weight: 500;
 }
@@ -1047,9 +1079,9 @@ nav.sticky {
 .womans-section .filterDiv .woman-card .woman__card__info .card__btn,
 .womans-section .filterDivMan .woman-card .woman__card__info .card__btn {
   display: inline-block;
-  color: white;
-  border-bottom: 2px solid white;
-  font-weight: 500;
+  color: #001219;
+  border-bottom: 2px solid #001219;
+  font-weight: 600;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   letter-spacing: 1px;
@@ -1058,8 +1090,8 @@ nav.sticky {
 
 .womans-section .filterDiv .woman-card .woman__card__info .card__btn:hover,
 .womans-section .filterDivMan .woman-card .woman__card__info .card__btn:hover {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #fc635e;
+  border-bottom: 2px solid #fc635e;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all 0.5s ease;
@@ -1079,7 +1111,7 @@ nav.sticky {
 .womans-section .filterBtnMan {
   display: inline-block;
   padding: 8px 16px;
-  color: black;
+  color: #001219;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   cursor: pointer;
@@ -1095,15 +1127,16 @@ nav.sticky {
 
 .womans-section .filterBtn:hover,
 .womans-section .filterBtnMan:hover {
-  color: black;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  color: #fc635e;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid #fc635e;
 }
 
 .womans-section .filterBtn.active,
 .womans-section .filterBtnMan.activeMan {
-  border-bottom: 2px solid black;
-  color: black;
+  border-bottom: 2px solid #fc635e;
+  color: #fc635e;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -1138,16 +1171,16 @@ nav.sticky {
 
 .man-image {
   padding-left: 48px !important;
-  padding-right: 10px !important;
+  padding-right: 1px !important;
 }
 
 .hashtag {
   position: absolute;
-  top: -95%;
+  top: -25%;
   left: -20%;
   font-size: 170px;
   color: rgba(0, 0, 0, 0.2);
-  z-index: 30;
+  z-index: -1;
 }
 
 @media (max-width: 1198.98px) {
@@ -1295,25 +1328,26 @@ nav.sticky {
 }
 
 .trends-section .trend__card .trend__card__img img {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .trends-section .trend__card:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .trends-section .trend__card .trend__info {
   position: absolute;
   bottom: -50%;
   max-width: 85%;
-  color: black;
+  color: #001219;
   background-color: white;
   left: 7.5%;
   padding: 25px;
+  border-bottom: 2px solid #fc635e;
 }
 
 .trends-section .trend__card .trend__info p {
@@ -1331,7 +1365,7 @@ nav.sticky {
 }
 
 .trends-section .trend__card .trend__info .trend__btn {
-  color: black;
+  color: #001219;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1343,7 +1377,7 @@ nav.sticky {
 .trends-section .trend__card .trend__info .trend__btn:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  color: red;
+  color: #fc635e;
 }
 
 .trends-section .trend__card .trend__info .trend__btn::after {
@@ -1351,7 +1385,7 @@ nav.sticky {
   position: absolute;
   width: 50%;
   height: 1.5px;
-  background-color: crimson;
+  background-color: #fc635e;
   left: 0;
   bottom: -5px;
   -webkit-transition: all ease .5s;
@@ -1367,7 +1401,7 @@ nav.sticky {
 }
 
 .trends__title h5 {
-  color: black;
+  color: #001219;
   font-size: 20px;
   font-weight: 600;
   z-index: 32;
@@ -1379,7 +1413,7 @@ nav.sticky {
   font-size: 50px;
   font-weight: 700;
   font-style: italic;
-  color: black;
+  color: #001219;
   margin-top: 10px;
   margin-bottom: 48px;
   z-index: 65;
@@ -1471,7 +1505,7 @@ nav.sticky {
   text-align: center;
   line-height: 45px;
   font-size: 20px;
-  background: crimson;
+  background: #fc635e;
   border-radius: 100px;
   margin-right: 8px;
   color: white;
@@ -1548,7 +1582,7 @@ nav.sticky {
 }
 
 .footer-area::after {
-  background-color: #011627;
+  background-color: #001219;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -1575,14 +1609,15 @@ nav.sticky {
 }
 
 .footer-area .single-footer-widget p {
-  color: aqua;
+  color: #fff;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
 }
 
 .footer-area .single-footer-widget .social-info a {
   display: inline-block;
-  border: 1px solid aqua;
+  border: 1px solid #fc635e;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1595,10 +1630,8 @@ nav.sticky {
 }
 
 .footer-area .single-footer-widget .social-info a:hover, .footer-area .single-footer-widget .social-info a:focus {
-  border-color: crimson;
-  background-color: crimson;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  border-color: #fc635e;
+  background-color: #fc635e;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1630,14 +1663,14 @@ nav.sticky {
 
 .footer-area .single-footer-widget .widget-nav ul li a {
   display: block;
-  color: aqua;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 11px;
 }
 
 .footer-area .single-footer-widget .widget-nav ul li a:hover, .footer-area .single-footer-widget .widget-nav ul li a:focus {
-  color: white;
+  color: #fc635e;
 }
 
 .footer-area .single-footer-widget .single-best-seller-product {
@@ -1661,13 +1694,13 @@ nav.sticky {
 
 .footer-area .single-footer-widget .single-best-seller-product .product-info a {
   display: block;
-  color: aqua;
+  color: #fc635e;
   font-size: 16px;
   font-weight: 400;
 }
 
 .footer-area .single-footer-widget .single-best-seller-product .product-info a:hover, .footer-area .single-footer-widget .single-best-seller-product .product-info a:focus {
-  color: white;
+  color: #fff;
 }
 
 .footer-area .single-footer-widget .single-best-seller-product .product-info p {
@@ -1683,7 +1716,7 @@ nav.sticky {
 }
 
 .footer-area .single-footer-widget .contact-information p span {
-  color: aqua;
+  color: #fc635e;
 }
 
 .footer-area .single-footer-widget .contact-information p:last-child {
@@ -1698,7 +1731,7 @@ nav.sticky {
 .footer-area .footer-bottom-area .border-line {
   width: 100%;
   height: 1px;
-  background-color: #34513d;
+  background-color: gray;
 }
 
 .footer-area .footer-bottom-area .copywrite-text {
@@ -1709,8 +1742,9 @@ nav.sticky {
 
 .footer-area .footer-bottom-area .copywrite-text p {
   font-size: 14px;
-  color: aqua;
-  font-weight: 400;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 0.7px;
   margin-bottom: 0;
 }
 
@@ -1721,7 +1755,7 @@ nav.sticky {
 }
 
 .footer-area .footer-bottom-area .copywrite-text p a:hover, .footer-area .footer-bottom-area .copywrite-text p a:focus {
-  color: aqua;
+  color: #fc635e;
 }
 
 .footer-area .footer-bottom-area .footer-nav {
@@ -1743,14 +1777,14 @@ nav.sticky {
 
 .footer-area .footer-bottom-area .footer-nav ul li a {
   display: inline-block;
-  color: aqua;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   margin: 0 15px;
 }
 
 .footer-area .footer-bottom-area .footer-nav ul li a:hover, .footer-area .footer-bottom-area .footer-nav ul li a:focus {
-  color: white;
+  color: #fc635e;
 }
 
 .footer-area .footer-bottom-area .footer-nav ul li:last-child a {

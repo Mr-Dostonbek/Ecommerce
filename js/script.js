@@ -9,9 +9,23 @@ window.addEventListener("scroll", function(){
   }
 });
 
+window.addEventListener("scroll", function(){
+  const scrollColor = document.querySelectorAll(".scrollColor");
+  if(window.scrollY > 1) {
+    for(let i = 0; i < scrollColor.length; i++) {
+      scrollColor[i].style.color = "white";
+    }
+  } else{
+    for(let i = 0; i < scrollColor.length; i++) {
+      scrollColor[i].style.color = "#001219";
+    }
+  }
+});
+
+
 // Woman's filter 
 
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -102,3 +116,4 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " activeMan";
   });
 }
+

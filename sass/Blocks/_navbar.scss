@@ -71,41 +71,48 @@ nav .content .links{
 .content .links li{
   list-style: none;
 }
+
 .content .links > li{
   position: relative;
 }
 .logo a{
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
-  color: aqua;
+  color: #001219;
   font-weight: 600;
 }
 .content .links li a{
   display: block;
-  color: white;
+  color: #001219;
   font-size: 1rem;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   padding: 9px 16px;
   transition: all 0.3s ease;
 }
+
 .content .links li label{
   display: none;
 }
 .content .links li a:hover,
 .content .links li label:hover{
-  color: aqua;
-  font-weight: 500;
-  background: black;
+  color: #fc635e;
+  background: #CAD2C5;
   transition: all .4s ease-out;
-  text-shadow: 0 0 10px rgb(23, 235, 235);
+  // text-shadow: 0 0 10px rgb(23, 235, 235);
 }
 .content .links > li > a:hover{
   background: transparent;
 }
+.content .links > li > a{
+  font-weight: 600;
+  &:hover{
+    font-weight: 600 !important;
+  }
+}
 .wrapper .search-icon,
 .wrapper .menu-icon{
-  color: #fff;
+  color: #001219;
   font-size: 18px;
   cursor: pointer;
   text-align: center;
@@ -165,10 +172,10 @@ nav .content .links{
 }
 .content .links ul li ul li a,
 .content .links ul li a{
-  color: black;
+  color: #001219;
   display: flex;
   font-size: 0.9rem;
-  color: black;
+  color: #001219;
   align-items: center;
   vertical-align: middle;
   flex-direction: row;
@@ -180,11 +187,11 @@ nav .content .links{
     padding: 3px 7px;
     display: inline-block;
     border-radius: 100px;
-    background-color: aqua;
+    background-color: #fc635e;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
-    color: black;
+    color: #001219;
     margin: 0;
 }
 
@@ -199,7 +206,7 @@ nav .content .links{
   transition: all .4s ease-out 0s;
 }
 .nav-contact label:hover {
-  color: aqua;
+  color: #fc635e;
   transition: all .4s ease-out 0s;
 }
 
@@ -208,16 +215,16 @@ nav .content .links{
   top: 0;
   right: -200%;
   height: 100vh;
-  color: black;
+  color: #001219;
   background: white;
   margin-left: 0;
   max-width: 500px;
-  z-index: 32;
+  z-index: 9999999;
   transition: all 0.3s ease;
 }
 .cancel__arrow{
   padding: 25px;
-  color: black;
+  color: #001219;
   cursor: pointer;
   i{
     font-size: 19px;
@@ -229,7 +236,7 @@ nav .content .links{
   padding: 25px 25px 75px;
   h1{
     font-size: 48px;
-    color: black;
+    color: #001219;
     font-weight: 900;
     margin: 24px 0;
   }
@@ -247,7 +254,7 @@ nav .content .links{
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-      color: aqua;
+      color: #fc635e;
       text-decoration: none;
     }
   }
@@ -261,10 +268,22 @@ nav .content .links{
     border: none;
     border-radius: 4px;
     line-height: 1.2;
-    color: blue;
     margin-bottom: 20px;
     &:focus{
       outline: none;
+    }
+  }
+  .badge {
+    display: inline-block;
+    font-size: 17px;
+    color: #fc635e;
+    font-weight: 500;
+    margin: 0 10px 13px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.075);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      background: #cad2c5;
     }
   }
 }
@@ -285,19 +304,21 @@ nav.sticky{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #001219;
   padding: 10px 0;
   transition: all 0.3s ease;
   z-index: 9000;
 }
 
+// .scrollColor{
+//   color: white !important;
+// }
 
 /* Responsive code start */
 
 @media screen and (max-width: 1198.98px){
   .wrapper{
     top: 0;
-    cursor: w-resize;
     .container-xl{
       padding-left: 25px;
       padding-right: 25px;
@@ -386,6 +407,8 @@ nav.sticky{
     // border-radius: 5px!important;
   }
 }
+
+
 
 @media (max-width: 992px) {
   
