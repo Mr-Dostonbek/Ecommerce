@@ -29,10 +29,10 @@ filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  if (c == "all") {c = "";}
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1){ w3AddClass(x[i], "show");}
   }
 }
 
@@ -75,14 +75,14 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-filterSelectionMan("allMan")
+filterSelectionMan("allMan");
 function filterSelectionMan(c) {
   var x, i;
   x = document.getElementsByClassName("filterDivMan");
-  if (c == "allMan") c = "";
+  if (c == "allMan") {c = "";}
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "showMan");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showMan");
+    if (x[i].className.indexOf(c) > -1) {w3AddClass(x[i], "showMan");}
   }
 }
 
