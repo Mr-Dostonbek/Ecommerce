@@ -8,13 +8,13 @@
     padding-right: 16px;
   }
   a{
-    color: gray;
+    color: rgb(233, 213, 213);
     font-family: 'Monserrat', Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 14.5px;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: gainsboro;
+      color: #fc635e;
       transition: all .4s ease-out 0s;
     }
   }
@@ -22,17 +22,17 @@
     padding: 0px 16px;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: gainsboro;
+      color: #fc635e;
       transition: all .4s ease-out 0s;
     }
   }
   .message span{
     padding: 0 16px;
-    color: gray;
+    color: rgb(233, 213, 213);
     cursor: pointer;
     transition: all .4s ease-out 0s;
     &:hover{
-      color: gainsboro;
+      color: #fc635e;
       transition: all .4s ease-out 0s;
     }
   }
@@ -96,13 +96,14 @@ nav .content .links{
 }
 .content .links li a:hover,
 .content .links li label:hover{
-  color: #fc635e;
-  background: #CAD2C5;
+  color: #fff;
+  background: #fc635e;
   transition: all .4s ease-out;
   // text-shadow: 0 0 10px rgb(23, 235, 235);
 }
 .content .links > li > a:hover{
   background: transparent;
+  color: #fc635e;
 }
 .content .links > li > a{
   font-weight: 600;
@@ -116,7 +117,19 @@ nav .content .links{
   font-size: 18px;
   cursor: pointer;
   text-align: center;
+  &:hover{
+    color: #fc635e !important;
+  }
 }
+
+.scrollColor{
+  transition: all 0.5s ease;
+  &:hover{
+  transition: all 0.5s ease;
+  color: #fc635e !important;
+  }
+}
+
 .wrapper .menu-icon{
   display: none;
 }
@@ -135,14 +148,12 @@ nav .content .links{
 .content .links ul{
   position: absolute;
   background: white;
-  // top: 90px;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
   padding: 0;
 }
 .content .links li:hover > ul{
-  // top: 54px;
   top: 100%;
   opacity: 1;
   visibility: visible;
@@ -175,7 +186,6 @@ nav .content .links{
   color: #001219;
   display: flex;
   font-size: 0.9rem;
-  color: #001219;
   align-items: center;
   vertical-align: middle;
   flex-direction: row;
@@ -187,11 +197,11 @@ nav .content .links{
     padding: 3px 7px;
     display: inline-block;
     border-radius: 100px;
-    background-color: #fc635e;
+    background-color: #001219;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
-    color: #001219;
+    color: #fff;
     margin: 0;
 }
 
@@ -202,7 +212,7 @@ nav .content .links{
 .nav-contact label + label, .nav-contact button{
   margin-left: 30px;
   cursor: pointer;
-  color: white;
+  color: #001219;
   transition: all .4s ease-out 0s;
 }
 .nav-contact label:hover {
@@ -310,13 +320,9 @@ nav.sticky{
   z-index: 9000;
 }
 
-// .scrollColor{
-//   color: white !important;
-// }
-
 /* Responsive code start */
 
-@media screen and (max-width: 1198.98px){
+@media (max-width: 1198.98px){
   .wrapper{
     top: 0;
     .container-xl{
@@ -406,12 +412,6 @@ nav.sticky{
     line-height: 30px;
     // border-radius: 5px!important;
   }
-}
-
-
-
-@media (max-width: 992px) {
-  
 }
 
 @media (min-width: 576px){
