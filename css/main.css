@@ -32,6 +32,82 @@ ul {
   list-style: none;
 }
 
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 9999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .btn {
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -662,7 +738,10 @@ nav.sticky {
   transition: all 1s ease;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  border-color: #fc635e;
   background-color: transparent;
+  -webkit-box-shadow: 0 0 5px #fc635e;
+          box-shadow: 0 0 5px #fc635e;
 }
 
 .splide__arrows {
@@ -816,15 +895,13 @@ nav.sticky {
 }
 
 .collection-section {
-  background: #fff;
+  background: #e9e1e1;
 }
 
 .collection-section .collection__item {
   position: relative;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.37);
-          box-shadow: 0 0 9px rgba(0, 0, 0, 0.37);
   overflow: hidden;
   cursor: pointer;
 }
@@ -837,8 +914,8 @@ nav.sticky {
 }
 
 .collection-section .collection__item:hover .collection__item__content {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -960,7 +1037,6 @@ nav.sticky {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background-color: #fff;
-  border-bottom: 3px solid #fc635e;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__img,
@@ -978,14 +1054,6 @@ nav.sticky {
 
 .womans-section .filterDiv .woman-card:hover,
 .womans-section .filterDivMan .woman-card:hover {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.womans-section .filterDiv .woman-card:hover img,
-.womans-section .filterDivMan .woman-card:hover img {
-  -webkit-transform: translate(-10%, -10%);
-          transform: translate(-10%, -10%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -1012,9 +1080,9 @@ nav.sticky {
   height: 70%;
   border: none;
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 0;
-  padding-top: 23px;
+  padding-top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,39 +1106,25 @@ nav.sticky {
   color: #001219;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  padding: 10px 5px;
+  padding: 10px;
   cursor: pointer;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__socials span:hover,
 .womans-section .filterDivMan .woman-card .woman__card__socials span:hover {
+  background-color: #fc635e;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  color: #fc635e;
+  color: #fff;
 }
 
 .womans-section .filterDiv .woman-card .woman__card__info,
 .womans-section .filterDivMan .woman-card .woman__card__info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 30%;
   border: none;
   cursor: pointer;
   padding: 15px;
-  padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transform: translateY(102%);
-          transform: translateY(102%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-align: left;
@@ -1160,12 +1214,12 @@ nav.sticky {
 
 .sale {
   position: absolute;
-  top: 30px;
+  top: 0px;
   left: 0;
-  padding: 3px 8px;
+  padding: 5px 10px;
   background: #f30000;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   z-index: 23;
   -webkit-transition: all 1s;
@@ -1174,12 +1228,12 @@ nav.sticky {
 
 .new {
   position: absolute;
-  top: 30px;
-  left: 0;
-  padding: 3px 8px;
+  top: 0;
+  right: 0;
   background: #1d5ad0;
+  padding: 5px 10px;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   z-index: 23;
   -webkit-transition: all 1s;
@@ -1196,7 +1250,7 @@ nav.sticky {
   top: -100%;
   left: -10%;
   font-size: 170px;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
 
@@ -1235,15 +1289,15 @@ nav.sticky {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
-  background-color: #001219;
+  background-color: #F1FEF7;
   overflow: hidden;
 }
 
 .autoSlider-section::after, .autoSlider-section::before {
   content: "";
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(black));
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), black);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   width: 15%;
   height: 100%;
   z-index: 2;
@@ -1286,11 +1340,13 @@ nav.sticky {
 .autoSlider-section .auto-slide .slider:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 7px #554e4e;
+          box-shadow: 10px 10px 7px #554e4e;
 }
 
 .autoSlider-section .auto-slide .slider img {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -1299,6 +1355,7 @@ nav.sticky {
 }
 
 .autoSlider-section .auto-slide .slider:hover .sale, .autoSlider-section .auto-slide .slider:hover .new {
+  display: block;
   top: -20px;
   left: -30px;
   -webkit-transition: all 1s;
@@ -1338,6 +1395,7 @@ nav.sticky {
   position: relative;
   cursor: pointer;
   margin-bottom: 150px;
+  z-index: 999;
 }
 
 .trends-section .trend__card .trend__card__img {
@@ -1436,10 +1494,6 @@ nav.sticky {
   padding: 0;
   margin: 0;
   z-index: 65;
-}
-
-.trends__title .hashtag {
-  top: -35%;
 }
 
 @media (max-width: 1198.98px) {

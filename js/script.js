@@ -1,3 +1,13 @@
+// LOADER
+
+const loader = document.querySelector('.loader');
+setTimeout(() => {
+  loader.style.display = 'none';
+  // setTimeout(() => {
+  //   loader.style.opacity = "0"
+  // },2000);
+},3000);
+
 // navbar start
 
 window.addEventListener("scroll", function () {

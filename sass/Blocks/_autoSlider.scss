@@ -2,13 +2,13 @@
   @include section-padding;
   position: relative;
   // background: linear-gradient(to bottom right, rgb(0, 153, 255), aqua);
-  background-color: #001219;
+  background-color: #F1FEF7;
   overflow: hidden;
   &::after,
   &::before {
     content: "";
     position: absolute;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), black);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255,255,255));
     width: 15%;
     height: 100%;
     z-index: 2;
@@ -33,16 +33,17 @@
     .slider {
       position: relative;
       transition: transform 1s;
-        &:hover img{
-          transform: scale(1.2);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
+      &:hover img{
+        transform: scale(1.2);
+        box-shadow: 10px 10px 7px rgb(85, 78, 78);
+      }
       img {
-        // width: 100%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         cursor: pointer;
         transition: transform 1s;
       }
       &:hover .sale, &:hover .new {
+        display: block;
         top: -20px;
         left: -30px;
         transition: all 1s;

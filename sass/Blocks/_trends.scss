@@ -7,6 +7,7 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 150px;
+    z-index: 999;
     .trend__card__img {
       overflow: hidden;
       img {
@@ -94,9 +95,6 @@
     padding: 0;
     margin: 0;
     z-index: 65;
-  }
-  .hashtag{
-    top: -35%;
   }
 }
 
